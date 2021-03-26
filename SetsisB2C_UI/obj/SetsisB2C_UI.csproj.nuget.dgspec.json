@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {}
+    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {
+    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
         "projectName": "SetsisB2C_UI",
-        "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2C_UI\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

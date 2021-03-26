@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w3Yx6zvluSa3q2QXcJrwOpDkSL/Tpx3vfsveQN8QX1UaS94sZ5SvNSKp3rYrbW7tOHMrOS3XuoGpV6hZPt1IjQ==",
+  "dgSpecHash": "S1K8uUybTTyoeMkaGkfyh1Vc9rr0rz9HiHbDNQpGeOzbH6VsDT3pt34NzMRceH3MUwnmC3VmpUBKmTXzyUPX/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

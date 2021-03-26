@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2CCore\\SetsisB2C_Core.csproj": {}
+    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
         "projectName": "SetsisB2C_Core",
-        "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+        "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\SetsisB2C\\SetsisB2CCore\\obj\\",
+        "outputPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
