@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-autofill\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-bs4\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-buttons\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-keytable\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-responsive\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-select\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Admin\dist\assets\libs\jquery.easing\bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-autofill\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-bs4\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-buttons\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-keytable\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-responsive\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-select\node_modules\datatables.net\License.txt" />
+    <Content Include="wwwroot\HTML\Starterkit\dist\assets\libs\jquery.easing\bower_components\jquery\MIT-LICENSE.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-autofill\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-bs4\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-buttons\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-keytable\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-responsive\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\datatables.net-select\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\jquery.easing\bower_components\jquery-easing-original\jquery.easing.compatibility.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\jquery.easing\bower_components\jquery-easing-original\jquery.easing.min.js" />
+    <None Include="wwwroot\HTML\Admin\dist\assets\libs\jquery.easing\bower_components\jquery\jquery.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-autofill\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-bs4\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-buttons\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-keytable\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-responsive\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\datatables.net-select\node_modules\datatables.net\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\jquery.easing\bower_components\jquery-easing-original\jquery.easing.compatibility.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\jquery.easing\bower_components\jquery-easing-original\jquery.easing.min.js" />
+    <None Include="wwwroot\HTML\Starterkit\dist\assets\libs\jquery.easing\bower_components\jquery\jquery.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>

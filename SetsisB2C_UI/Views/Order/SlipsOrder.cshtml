@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewData["Title"] = "LabelOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<h1>OrderSlips</h1>
+
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 font-size-18">Bekleyen Siparişler</h4>
+
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Siparişler</a></li>
+                                <li class="breadcrumb-item active">Bekleyen Siparişler</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row mb-2">
+                                <div class="col-sm-4">
+                                    <div class="search-box mr-2 mb-2 d-inline-block">
+                                        <div class="position-relative">
+                                            <label class="control-label">Sipariş Ara</label>
+                                            <input type="search" class="form-control" id="myInput" onkeyup="searchFunction()" placeholder="Sipariş No Giriniz..">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="text-sm-right">
+                                        <!-- <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-plus mr-1"></i> New Customers</button> -->
+                                    </div>
+                                </div><!-- end col-->
+                            </div>
+
+                            <div class="table-responsive">
+                                <table class="table table-centered table-nowrap" id="myTable">
+
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Barkod</th>
+                                            <th>Sipariş Numarası / OrderHeaderID</th>
+                                            <th>Detay</th>
+                                            <th>Adet</th>
+                                            <th>Toplam Fiyat</th>
+                                            <th>Oluşturan</th>
+                                            <th>Aksiyon</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                        
+                                            <tr>
+                                                <td>
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                        <label class="custom-control-label" for="customCheck1">&nbsp;</label>
+                                                    </div>
+                                                </td>
+                                                <td>item.Barcode</td>
+                                                <td>
+                                                    <p class="mb-1">item.OrderNumber</p>
+                                                    <p class="mb-0">item.OrderHeaderID</p>
+                                                </td>
+
+                                                <td>
+                                                    @*@item.Description*@
+                                                    <p class="mb-1">item.Description</p>
+                                                    <p class="mb-0">item.ShippingPostalAddressID</p>
+                                                </td>
+                                                @*<td><span class="badge badge-success font-size-12"><i class="mdi mdi-star mr-1"></i> 4.2</span></td>*@
+                                                <td>item.Qty1</td>
+                                                <td>item.PriceVI</td>
+                                                <td>item.CreatedUserName</td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
+                                                            <i class="mdi mdi-dots-horizontal font-size-18"></i>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-right">
+                                                            <a asp-controller="Order" asp-action="OrderAccept" class="dropdown-item"><i class="mdi mdi-pencil font-size-16 text-success mr-1"></i> Onayla</a>
+
+                                                            <li><button id="remove" class="dropdown-item"><i class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i> İptal Et</button></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </td>
+
+                                            </tr>
+                                            @*<button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
+                                                    View Details
+                                                </button>*@
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="pagination pagination-rounded justify-content-end mb-2">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                                        <i class="mdi mdi-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                                <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                                        <i class="mdi mdi-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+        </div> <!-- container-fluid -->
+    </div>
+</div>
+<!-- End Page-content -->
+<script type="text/javascript">
+
+    function searchFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+
+
+    $(document).ready(function () {
+        $("#myTable").on('click', '#remove', function () {
+            $(this).closest('tr').remove();
+        });
+    });
+
+</script>
+
+
