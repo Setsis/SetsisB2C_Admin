@@ -466,9 +466,11 @@
                                     <i class="bx bx-box mr-2"></i><span key="t-apps">Stok</span> <div class="arrow-down"></div>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-pages">
-
+                                    <a asp-controller="Stock" asp-action="Brands" class="dropdown-item" key="t-calendar">Marka Yönetimi</a>
+                                    <a asp-controller="Stock" asp-action="Supliers" class="dropdown-item" key="t-calendar">Tedarikçi Yönetimi</a>
+                                    <a asp-controller="Stock" asp-action="Properties" class="dropdown-item" key="t-calendar">Özellik Yönetimi</a>
                                     <a asp-controller="Stock" asp-action="GetStock" class="dropdown-item" key="t-calendar">Tüm Stoklar</a>
-                                    <a asp-controller="Stock" asp-action="ProductStocked"  class="dropdown-item" key="t-file-manager">Stoklu Ürünler</a>
+                                    <a asp-controller="Stock" asp-action="ProductStocked" class="dropdown-item" key="t-file-manager">Stoklu Ürünler</a>
                                     <div class="dropdown">
                                         <a asp-controller="Stock" asp-action="ProductStockless" class="dropdown-item" key="t-file-manager">
                                             <span key="t-email">Stoksuz Ürünler</span>
@@ -504,26 +506,28 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-components">
                                     <div class="dropdown">
+                                        <a asp-controller="Design" asp-action="TopHeader" class="dropdown-item" id="topnav-crypto">
+                                            <span key="t-forms">Üst Menü Düzenleme</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a asp-controller="Design" asp-action="MainMenu" class="dropdown-item" id="topnav-crypto">
+                                            <span key="t-forms">Ana Menü Düzenleme</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
                                         <a asp-controller="Design" asp-action="Banners" class="dropdown-item" id="topnav-crypto">
                                             <span key="t-forms">Banner Düzenleme</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
                                         <a asp-controller="Design" asp-action="Temp" class="dropdown-item" id="topnav-crypto">
-
                                             <span key="t-tables">Tema Rengi</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-charts"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-charts">Vitrinler</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-icons">Sayfa Dizaynı</span>
+                                        <a asp-controller="Design" asp-action="ShowCase" class="dropdown-item" id="topnav-crypto">
+                                            <span key="t-tables">Vitrin Düzenleme</span>
                                         </a>
                                     </div>
                                 </div>

@@ -28,5 +28,45 @@ namespace SetsisB2C_UI.Controllers
         {
             return View();
         }
+        public IActionResult Brands()
+        {
+            return View();
+        }
+        public IActionResult _PartialBrandsAdd()
+        {
+            return View();
+        }
+        public IActionResult _PartialBrandsUpdate()
+        {
+            return View();
+        }
+        public IActionResult _PartialBrandsDelete()
+        {
+            return View();
+        }
+        public IActionResult Supliers()
+        {
+            return View();
+        }
+        public IActionResult _PartialSupliersAdd()
+        {
+            return View();
+        }
+        public IActionResult _PartialSupliersUpdate()
+        {
+            return View();
+        }
+        public IActionResult _PartialSupliersDelete()
+        {
+            return View();
+        }
+        public IActionResult Properties()
+        {
+            return View();
+        }
+        public IActionResult _PartialPropertiesAdd()
+        {
+            return View();
+        }
     }
 }
