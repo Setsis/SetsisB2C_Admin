@@ -16,3 +16,12 @@ C:\Users\PC\Desktop\SetsisB2C\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Co
 C:\Users\PC\Desktop\SetsisB2C\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.dll
 C:\Users\PC\Desktop\SetsisB2C\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.pdb
 C:\Users\PC\Desktop\SetsisB2C\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\bin\Debug\netcoreapp3.1\SetsisB2C_Core.deps.json
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\bin\Debug\netcoreapp3.1\SetsisB2C_Core.dll
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\bin\Debug\netcoreapp3.1\SetsisB2C_Core.pdb
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.AssemblyInfo.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.dll
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CCore\obj\Debug\netcoreapp3.1\SetsisB2C_Core.pdb

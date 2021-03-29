@@ -1,9 +1,51 @@
 ﻿
-    @{
-        ViewData["Title"] = "Index";
-        Layout = "~/Views/Shared/_Layout.cshtml";
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 
-    }
+}
+<div class="row">
+    <div class="col-12">
+        <div class="page-title-box d-flex align-items-center justify-content-between">
+            <h4 class="mb-0 font-size-18">Cards</h4>
 
-<h1>mesaj</h1>
+            <div class="page-title-right">
+                <a type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2" asp-controller="Home" asp-action="Slider"><i class="mdi mdi-plus mr-1"></i> Slider Ekle</a>
+            </div>
 
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-6 col-xl-3">
+
+        <!-- Simple card -->
+        <div class="card">
+            <img class="card-img-top img-fluid" src="~/HTML/Admin/dist/assets/images/small/img-1.jpg" alt="Card image cap">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="#" class="btn btn-primary waves-effect waves-light">Düzenle</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="btn btn-success waves-effect waves-light">Yayında</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="btn btn-danger waves-effect waves-light">Sil</a>
+                    </div>
+
+                </div>
+               
+            </div>
+        </div>
+
+    </div><!-- end col -->
+
+
+   
+
+
+
+</div>
