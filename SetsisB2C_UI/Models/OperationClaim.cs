@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SetsisB2C_UI.Models
 {
-    public class OperationClaim:IdentityUser
+    public class OperationClaim
     {
 
         public int Id { get; set; }
