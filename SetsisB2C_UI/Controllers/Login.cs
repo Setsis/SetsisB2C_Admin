@@ -28,6 +28,7 @@ namespace SetsisB2C_UI.Controllers
             value = apiConnect.StrResponse;
             var userControl = JsonConvert.DeserializeObject<List<User>>(value);
 
+           
           
 
                 if (userControl.Count() > 0)

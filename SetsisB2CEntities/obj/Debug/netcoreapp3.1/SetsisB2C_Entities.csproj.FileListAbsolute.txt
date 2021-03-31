@@ -28,3 +28,6 @@ C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\obj\Debug\netcoreapp3.1\Se
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\obj\Debug\netcoreapp3.1\SetsisB2C_Entities.csproj.CopyComplete
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\obj\Debug\netcoreapp3.1\SetsisB2C_Entities.dll
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\obj\Debug\netcoreapp3.1\SetsisB2C_Entities.pdb
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\bin\Debug\netcoreapp3.1\SetsisB2C_Entities.runtimeconfig.json
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\bin\Debug\netcoreapp3.1\SetsisB2C_Entities.runtimeconfig.dev.json
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CEntities\obj\Debug\netcoreapp3.1\SetsisB2C_Entities.genruntimeconfig.cache
