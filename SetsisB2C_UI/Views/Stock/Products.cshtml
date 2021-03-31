@@ -1,0 +1,82 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row justify-content-center"><h3>Ürün Yönetimi</h3></div>
+                <div class="row mb-2">
+                    <div class="col-sm-4">
+                        <div class="search-box mr-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Ara...">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="text-sm-right">
+                            <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2" data-toggle="modal" data-target="#ValuesAdd"><i class="mdi mdi-plus mr-1"></i>Yeni Ürün Ekle</button>
+                            <button type="button" class="btn btn-primary btn-rounded waves-effect waves-light mb-2 mr-2" data-toggle="modal" data-target="#ValuesAdd"><i class="mdi mdi-download"></i> Excel Olarak İndir</button>
+                        </div>
+                    </div>
+                    <!-- end col-->
+                </div>
+                <div class="table-responsive">
+                    <table id="DowlandTable" class="table table-centered table-nowrap">
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="width:40px">ID</th>
+                                <th style="width:40px">Barkod</th>
+                                <th style="width:500px">Ürün</th>
+                                <th style="width:50px">Kategori</th>
+                                <th style="width:60px">Eylemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>123456789</td>
+                                <td>Ewa 3'lü Koltuk</td>
+                                <td>Oturma Odası / Koltuk Takımı</td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsPhotos"><i class="far fa-image" title="Fotoğrafları Görüntüle"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#EditPrice"><i class="bx bx-money" title="Fiyat Düzenle"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="bx bx-show-alt" title="Aktif"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsUpdate"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ValuesDelete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pagination pagination-rounded justify-content-end mb-2">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                            <i class="mdi mdi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+@await Html.PartialAsync("_PartialProductPhotos")
+@await Html.PartialAsync("_PartialProductEditPrice")
+@await Html.PartialAsync("_PartialProductsUpdate")
+@*@await Html.PartialAsync("_PartialValuesAdd")
+    @await Html.PartialAsync("_PartialValuesUpdate")
+    @await Html.PartialAsync("_PartialValuesDelete")*@

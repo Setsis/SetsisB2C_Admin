@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using SetsisB2B.Class;
+using SetsisB2C_UI.Models.Hierarchy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +19,14 @@ namespace SetsisB2C_UI.Controllers
         {
             return View();
         }
+        public IActionResult TopHeader()
+        {
+            return View();
+        }
+        public IActionResult ShowCase()
+        {
+            return View();
+        }
+        
     }
 }

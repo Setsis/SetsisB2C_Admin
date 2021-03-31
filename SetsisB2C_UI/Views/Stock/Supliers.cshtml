@@ -1,0 +1,94 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row justify-content-center"><h3>Tedarikçi Yönetimi</h3></div>
+                <div class="row mb-2">
+                    <div class="col-sm-4">
+                        <div class="search-box mr-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Ara...">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="text-sm-right">
+                            <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2" data-toggle="modal" data-target="#SupliersAdd"><i class="mdi mdi-plus mr-1"></i>Yeni Tedarikçi Ekle</button>
+                        </div>
+                    </div>
+                    <!-- end col-->
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-centered table-nowrap">
+                        <thead class="thead-light">
+                            <tr>
+                                <th style="width: 20px;">
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">&nbsp;</label>
+                                    </div>
+                                </th>
+                                <th>Tedarikçi Adı</th>
+                                <th>Yetkili Kişi</th>
+                                <th>Telefon Nu.</th>
+                                <th>Mail</th>
+                                <th>Adres</th>
+                                <th>Detaylar</th>
+                                <th>Güncelle / Sil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">&nbsp;</label>
+                                    </div>
+                                </td>
+                                @*Tedarikçi Adı*@<td>Setsis</td>
+                                @*Yetkili Kişi*@<td>Sinan Ramazan KABİL</td>
+                                @*Telefon*@<td>0544 812 00 77</td>
+                                @*Mail*@<td>sinan.kabil@setsis.com.tr</td>
+                                @*Adres*@<td>Şişli/İstanbul</td>                              
+                                @*Detaylar*@<td>
+                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
+                                        View Details
+                                    </button>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#SupliersDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pagination pagination-rounded justify-content-end mb-2">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Previous">
+                            <i class="mdi mdi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="javascript: void(0);">1</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">2</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">3</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">4</a></li>
+                    <li class="page-item"><a class="page-link" href="javascript: void(0);">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="javascript: void(0);" aria-label="Next">
+                            <i class="mdi mdi-chevron-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+@await Html.PartialAsync("_PartialSupliersAdd")
+@await Html.PartialAsync("_PartialSupliersUpdate")
+@await Html.PartialAsync("_PartialSupliersDelete")

@@ -1,0 +1,103 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="modal fade" id="EditPrice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Fiyat Düzenle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" class="form-group">
+                    <div class="row">
+                        <div class="col-md-6 border-right border-dark">
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-md-12 col-form-label">Alış Fiyatı</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" value="Alış Fiyatı" id="example-text-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-md-12 col-form-label">Satış Fiyatı</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" value="Satış Fiyatı" id="example-text-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-md-12 col-form-label">İndirimli Fiyatı</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" value="İndirimli Fiyatı" id="example-text-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12 col-form-label">İndirim Türü</label>
+                                <div class="col-md-12">
+                                    <select class="form-control">
+                                        <option>Seç</option>
+                                        <option>Sürekli</option>
+                                        <option>Tarih Aralığına Göre</option>
+                                        <option>Stok Miktarına Göre</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group" style="margin-top:3px">
+                                <label for="example-text-input" class="col-md-12 col-form-label">&nbsp;</label>
+                                <div class="custom-control custom-radio custom-control-inline custom-radio-primary mb-3">
+                                    <input type="radio" id="RadioEditPrice1" name="RadioPrice" class="custom-control-input" value="WithKdv">
+                                    <label class="custom-control-label mx-3" for="RadioEditPrice1">KDV Dahil</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline custom-radio-primary mb-3">
+                                    <input type="radio" id="RadioEditPrice2" name="RadioPrice" class="custom-control-input" value="WithoutKdv">
+                                    <label class="custom-control-label mx-3" for="RadioEditPrice2">KDV Dahil Değil</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="example-text-input" class="col-md-12 col-form-label">KDV Oranı</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" type="text" value="KDV Oranı" id="example-text-input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12 col-form-label">Para Birimi</label>
+                                <div class="col-md-12">
+                                    <select class="form-control">
+                                        <option>Seç</option>
+                                        <option>₺ TL</option>
+                                        <option>$ USD</option>
+                                        <option>€ EUR</option>
+                                        <option>£ GBP</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-12 col-form-label">Satış Birimi</label>
+                                <div class="col-md-12">
+                                    <select class="form-control">
+                                        <option>Seç</option>
+                                        <option>Adet</option>
+                                        <option>Kilogram</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="float-md-right">
+                        <div class="form-group">
+                            <label for="example-text-input" class="col-md-12 col-form-label">Son Fiyat = ....</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal</button>
+                <button type="button" class="btn btn-primary">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
