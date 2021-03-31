@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Gündoğdu Mobilya</title>
+    <title>Horizontal Scrollable Layout | Skote - Responsive Bootstrap 4 Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -431,7 +431,8 @@
                         <ul class="navbar-nav">
 
                             <li class="nav-item dropdown">
-                                <a asp-controller="Home" asp-action="Index" class="nav-link dropdown-toggle arrow-none" id="topnav-dashboard">
+                                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-dashboard" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bx bx-home-circle mr-2"></i><span key="t-dashboards">Ana Sayfa</span>
                                 </a>
                             </li>
@@ -451,7 +452,7 @@
                                                 <a asp-controller="Order" asp-action="AllOrder" class="dropdown-item" key="t-alerts">Tüm Siparişler</a>
                                                 <a asp-controller="Order" asp-action="ReturnOrder" class="dropdown-item" key="t-buttons">İade Edilenler</a>
                                                 <a asp-controller="Order" asp-action="SlipsOrder" class="dropdown-item" key="t-cards">Etiket Yazdır</a>
-                                                <a asp-controller="Order" asp-action="BillsOrder" class="dropdown-item" key="t-carousel">İrsalyeler</a>
+                                                <a  asp-controller="Order" asp-action="BillsOrder"  class="dropdown-item" key="t-carousel">İrsalyeler</a>
                                             </div>
                                         </div>
                                     </div>
@@ -465,7 +466,9 @@
                                     <i class="bx bx-box mr-2"></i><span key="t-apps">Stok</span> <div class="arrow-down"></div>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-pages">
-
+                                    <a asp-controller="Stock" asp-action="Brands" class="dropdown-item" key="t-calendar">Marka Yönetimi</a>
+                                    <a asp-controller="Stock" asp-action="Supliers" class="dropdown-item" key="t-calendar">Tedarikçi Yönetimi</a>
+                                    <a asp-controller="Stock" asp-action="Properties" class="dropdown-item" key="t-calendar">Özellik Yönetimi</a>
                                     <a asp-controller="Stock" asp-action="GetStock" class="dropdown-item" key="t-calendar">Tüm Stoklar</a>
                                     <a asp-controller="Stock" asp-action="ProductStocked" class="dropdown-item" key="t-file-manager">Stoklu Ürünler</a>
                                     <div class="dropdown">
@@ -503,25 +506,28 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="topnav-components">
                                     <div class="dropdown">
+                                        <a asp-controller="Design" asp-action="TopHeader" class="dropdown-item" id="topnav-crypto">
+                                            <span key="t-forms">Üst Menü Düzenleme</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
+                                        <a asp-controller="Design" asp-action="MainMenu" class="dropdown-item" id="topnav-crypto">
+                                            <span key="t-forms">Ana Menü Düzenleme</span>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown">
                                         <a asp-controller="Design" asp-action="Banners" class="dropdown-item" id="topnav-crypto">
                                             <span key="t-forms">Banner Düzenleme</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
                                         <a asp-controller="Design" asp-action="Temp" class="dropdown-item" id="topnav-crypto">
-
                                             <span key="t-tables">Tema Rengi</span>
                                         </a>
                                     </div>
                                     <div class="dropdown">
-                                        <a asp-controller="ShowCase" asp-action="Index" class="dropdown-item" id="topnav-charts">
-                                            <span key="t-charts">Vitrinler</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-icons">Sayfa Dizaynı</span>
+                                        <a asp-controller="Design" asp-action="ShowCase" class="dropdown-item" id="topnav-crypto">
+                                            <span key="t-tables">Vitrin Düzenleme</span>
                                         </a>
                                     </div>
                                 </div>
@@ -639,7 +645,12 @@
                                 </div>
                             </li>
 
-                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bx bx-receipt mr-2"></i><span key="t-layouts">Faturalar</span> <div class="arrow-down"></div>
+                                </a>
+                            </li>
 
                         </ul>
                     </div>
@@ -667,17 +678,18 @@
 
             <!-- End Page-content -->
             <!-- Modal -->
+            
             <!-- end modal -->
 
             <footer class="footer">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-sm-6">
-                            
+                            <script>document.write(new Date().getFullYear())</script> © Skote.
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-right d-none d-sm-block">
-
+                                Design & Develop by Themesbrand
                             </div>
                         </div>
                     </div>
@@ -689,8 +701,11 @@
     </div>
     <!-- END layout-wrapper -->
     <!-- Right Sidebar -->
+    
     <!-- /Right-bar -->
     <!-- Right bar overlay-->
+   
+
     <!-- JAVASCRIPT -->
     <script src="~/HTML/Admin/dist/assets/libs/jquery/jquery.min.js"></script>
     <script src="~/HTML/Admin/dist/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -702,8 +717,6 @@
     <script src="~/HTML/Admin/dist/assets/libs/apexcharts/apexcharts.min.js"></script>
 
     <script src="~/HTML/Admin/dist/assets/js/pages/dashboard.init.js"></script>
-    <script src="~/HTML/Admin/dist/assets/libs/dropzone/min/dropzone.min.js"></script>
-
 
     <script src="~/HTML/Admin/dist/assets/js/app.js"></script>
 </body>

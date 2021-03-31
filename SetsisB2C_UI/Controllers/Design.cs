@@ -16,5 +16,31 @@ namespace SetsisB2C_UI.Controllers
         {
             return View();
         }
+        public IActionResult TopHeader()
+        {
+            return View();
+        }
+        public IActionResult MainMenu()
+        {
+
+            return View();
+        }
+        public IActionResult _PartialCategoryUpdate()
+        {
+            return View();
+        }
+        public IActionResult _PartialCategoryDelete()
+        {
+            return View();
+        }
+        public IActionResult _PartialCategoryAdd()
+        {
+            return View();
+        }
+        public IActionResult ShowCase()
+        {
+            return View();
+        }
+        
     }
 }
