@@ -13,7 +13,7 @@
     </div>
 
     <div class="p-2">
-        <form method="post" class="form-horizontal">
+        <form method="post" class="form-horizontal" asp-controller="ShowCase" asp-action="GeneralSettings">
 
             <div class="row">
 
@@ -21,14 +21,17 @@
                 <div class="col-md-3">
                     <div class="form-check ">
                         <input class="form-check-input" id="icerik" type="radio" name="exampleRadios" value="option1">
-                        <label class="form-check-label"  for="exampleRadios1">
+                        <label class="form-check-label" for="exampleRadios1">
                             İçerik
                         </label>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="form-check ">
+                    
                         <input class="form-check-input" id="product" type="radio" name="exampleRadios" value="option1">
+                    
+                    <div class="form-check ">
+                        
                         <label class="form-check-label" for="exampleRadios1">
                             Ürün
                         </label>
@@ -37,30 +40,33 @@
                 </div>
 
             </div>
-            
-            <div  class="card"  id="crd" style="display:none" >
+
+            <div class="card" id="crd" style="display:none">
                 <div class="card-body">
-                    <input type="text" onkeyup="myFunction()"   id="search" placeholder="Ürün Ara" >
+                    <input type="text" onkeyup="myFunction()" id="search" placeholder="Ürün Ara">
                     <div class="table-responsive" id="show" style="display:block;">
-                        <table id="tblproduct" class="table"  style="display:none;">
+                        <table id="tblproduct" class="table" style="display:none;">
                             <thead>
                                 <tr>
-                                    <th style="width:60%;">ID</th>
-                                    <th style="width:40%;">Ürün Adı</th>
+                                    <th >Barcode</th>
+                                    <th >Ürün Adı</th>
+                                    <th >Açıklama</th>
+                                    <th >Renk</th>
+
                                 </tr>
-                                </thead>
+                            </thead>
                             <tbody>
                                 @{
                                     foreach (var product in Model)
                                     {
 
-                                                                <tr>
-                                                                    <td>@product.Barcode</td>
-                                                                    <td>@product.ItemCode</td>
-                                                                    <td>@product.ItemDescription</td>
-                                                                    <td>@product.ColorDescription</td>
+                                        <tr style="height:40%;">
+                                            <td>@product.Barcode</td>
+                                            <td>@product.ItemCode</td>
+                                            <td>@product.ItemDescription</td>
+                                            <td>@product.ColorDescription</td>
 
-                                                                </tr>
+                                        </tr>
                                     }
                                 }
 
@@ -117,14 +123,14 @@
                 </div>
             </div>
 
-           
+
         </form>
     </div>
 
 </div>
 <script>
 
-    
+
     document.getElementById("product").addEventListener("click", function () {
 
         var search = document.getElementById("crd");
@@ -136,7 +142,7 @@
 
         }
     });
- 
+
 
     function myFunction() {
         var input, filter, table, tr, td, i, txtValue,response;
@@ -154,7 +160,7 @@
         } else {
             response.style.display = "block"
         }
-            
+
         for (i = 0; i < tr.length; i++) {
 
                 td = tr[i].getElementsByTagName("td")[1];
@@ -163,20 +169,20 @@
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
 
                         tr[i].style.display = "";
-                    
+
 
                     } else {
 
 
                         tr[i].style.display = "none";
-                       
+
                     }
                 }
             }
-        
-  
-      
+
+
+
     }
-  
+
 
 </script>
