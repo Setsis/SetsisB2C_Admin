@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "EPj1bsQ7ymli+JT1ahcSW0+MPJXafzA1ipXm93tAimPwpSNBClwNvQsGTsv+ONWD3oHJWAcNPiYpaNNHEXMprA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+=======
+  "dgSpecHash": "FGASTSvhkohdF2oDlO+HOJwwQSsr2p94F9Ojw08zBCdnpkVAF/txJ0HKYohVnhOw9ObIFBtJ6EiHA28kXi4Tdg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.4\\microsoft.entityframeworkcore.5.0.4.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.4\\microsoft.entityframeworkcore.abstractions.5.0.4.nupkg.sha512",

@@ -8601,11 +8601,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
       "projectName": "SetsisB2C_UI",
       "projectPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
       "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+      "projectName": "SetsisB2C_UI",
+      "projectPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+      "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

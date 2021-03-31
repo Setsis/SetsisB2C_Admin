@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "yOISNuYbyBcr+Ema+5fSplB4b1VYXF7dVnljTnZu4Zx+zRypA4eh0EY7RoQLMx46FPgcrY/9vvuIhH4DwUpMyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+=======
+  "dgSpecHash": "EjR05MIX3+7n9WQn2hzakJ3by9vHlXXoxODMQY8ULvUHJe4Ne1kUWoUdu7lsVBDMUnVzBwmaBTE4rxDD5fLxZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.4\\microsoft.aspnetcore.cryptography.keyderivation.5.0.4.nupkg.sha512",

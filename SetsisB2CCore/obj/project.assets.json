@@ -535,11 +535,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
       "projectName": "SetsisB2C_Core",
       "projectPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
       "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+      "projectName": "SetsisB2C_Core",
+      "projectPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+      "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",

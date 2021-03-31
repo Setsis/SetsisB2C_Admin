@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "N0YG2+X5Od7G4zSvVs/jNaDWZ2yrFutRwtZcLvN4dDfFhQtj9l/sAhKiYFy3AEZlNro3MRQy4p9kLgbzLteLjA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+=======
+  "dgSpecHash": "7ABbjXT1LYnxDUDSwunX52oPvPRnok9k8iGxeg44r93KCicd/MNkRNZrer1l4ulqv8BlFgAROqP5rOW5iM7/CA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\Sinan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
