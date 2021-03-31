@@ -37,30 +37,15 @@
                                 @*Tanım*@
                                 <td>Renk</td>
                                 <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary row justify-content-end" data-placement="top" title="" data-original-title="Edit"><i class="bx bxs-folder-open"></i></a>
+                                    <a asp-action="PropertyValues" class="mr-3 text-primary row justify-content-end" data-placement="top" title="" data-original-title="Edit"><i class="bx bxs-folder-open"></i></a>
                                 <td class="row justify-content-center">
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="bx bx-add-to-queue"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ValuesAdd"><i class="bx bx-add-to-queue"></i></a>
                                 </td>
                                 <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="mdi mdi-pencil font-size-18"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#SupliersDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#PropertiesUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#PropertiesDelete"><i class="mdi mdi-close font-size-18"></i></a>
                                 </td>
-                            </tr>
-                            <tr>
-                                @*Tanım*@
-                                <td>Kumaş</td>
-                                <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary row justify-content-end" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="bx bxs-folder-open"></i></a>
-                                </td>
-                                <td class="row justify-content-center">
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="bx bx-add-to-queue"></i></a>
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#SupliersDelete"><i class="mdi mdi-close font-size-18"></i></a>
-                                </td>
-                            </tr>
-
+                            </tr>                    
                         </tbody>
                     </table>
                 </div>
@@ -86,6 +71,6 @@
     </div>
 </div>
 @await Html.PartialAsync("_PartialPropertiesAdd")
-@*
-    @await Html.PartialAsync("_PartialPropertiesUpdate")
-    @await Html.PartialAsync("_PartialPropertiesDelete")*@
+@await Html.PartialAsync("_PartialPropertiesUpdate")
+@await Html.PartialAsync("_PartialPropertiesDelete")
+@await Html.PartialAsync("_PartialValuesAdd")

@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj": {}
+    "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+    "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+        "projectUniqueName": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
         "projectName": "SetsisB2C_Core",
-        "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
+        "projectPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+        "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Sinan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -64,18 +69,23 @@
         }
       }
     },
-    "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj": {
+    "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
         "projectName": "SetsisB2C_DataAccess",
-        "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Sinan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -88,8 +98,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
-                "projectPath": "C:\\Users\\PC\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
+              "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+                "projectPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
               }
             }
           }

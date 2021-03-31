@@ -1,4 +1,4 @@
-﻿@model SliderSettings;
+﻿
 @{
     ViewData["Title"] = "Slider";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,7 +7,7 @@
 <div class="row">
     <div class="col-12">
         <div class="page-title-box d-flex align-items-center justify-content-between">
-            <h4 class="mb-0 font-size-18">SLİDER</h4>
+            <h4 class="mb-0 font-size-18">Form Elements</h4>
 
             <div class="page-title-right">
                 <ol class="breadcrumb m-0">
@@ -20,64 +20,43 @@
     </div>
 </div>
 <div class="row">
-
-
-    <div class="col-lg-12">
+    <div class="col-12">
         <div class="card">
             <div class="card-body">
-              
 
-                <form asp-controller="Home" asp-action="Slider" method="post">
 
-                        <div action="#" class="dropzone "  align="center">
-                            <div class="fallback">
-                                <input asp-for="ImageName" name="file" type="file" multiple="multiple">
-                            </div>
-                            <div class="dz-message needsclick ">
-                                <div class="mb ">
-                                    <i class="display-4 text-muted bx bxs-cloud-upload" style="padding-left:50px"></i>
-                                </div>
-
-                                <h4>Drop files here or click to upload.</h4>
-                            </div>
-                        </div>
-                    
-                    <div class="form-group row mb-4 mt-4">
-                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">İsim</label>
-                        <div class="col-sm-9">
-                            <input asp-for="Name" type="text" class="form-control" id="horizontal-firstname-input">
-                        </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-md-2 col-form-label">Resim</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="number" value="42" id="example-number-input">
                     </div>
-                    <div class="form-group row mb-4">
-                        <label for="horizontal-email-input" class="col-sm-3 col-form-label">Açıklama</label>
-                        <div class="col-sm-9">
-                            <input asp-for="Decription" type="text" class="form-control" id="horizontal-email-input">
-                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-number-input" class="col-md-2 col-form-label">İsim</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" value="42" id="example-number-input">
                     </div>
-                    <div class="form-group row mb-4">
-                        <label for="horizontal-password-input" class="col-sm-3 col-form-label">Hedef Link</label>
-                        <div class="col-sm-9">
-                            <input asp-for="ImageLink" type="text" class="form-control" id="horizontal-password-input">
-                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-datetime-local-input" class="col-md-2 col-form-label">Açıklama</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" value="2019-08-19T13:45:00" id="example-datetime-local-input">
                     </div>
-                    <div class="form-group row mb-4">
-                        <label for="horizontal-password-input" class="col-sm-3 col-form-label">Sıra</label>
-                        <div class="col-sm-9">
-                            <input asp-for="Orders" type="number" class="form-control" id="horizontal-password-input">
-                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-datetime-local-input" class="col-md-2 col-form-label">Hedef Link</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" value="2019-08-19T13:45:00" id="example-datetime-local-input">
                     </div>
-
-                    <div class="form-group row justify-content-end">
-                        <div class="col-sm-9">
-
-
-                            <div>
-                                <button type="submit" class="btn btn-primary w-md">Submit</button>
-                            </div>
-                        </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-datetime-local-input" class="col-md-2 col-form-label">Sıra</label>
+                    <div class="col-md-10">
+                        <input class="form-control" type="text" value="2019-08-19T13:45:00" id="example-datetime-local-input">
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-    </div>
+    </div> <!-- end col -->
 </div>
+

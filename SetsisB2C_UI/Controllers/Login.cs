@@ -21,14 +21,13 @@ namespace SetsisB2C_UI.Controllers
         }
         [HttpPost]
         [AllowAnonymous]
-        public async Task<ActionResult> Index(string username,string password)
+        public async Task<ActionResult>Index(string username,string password)
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/UserControl?Username="+username+"&Password="+password);
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Login/UserControl?Username="+username+"&Password="+password);
             value = apiConnect.StrResponse;
             var userControl = JsonConvert.DeserializeObject<List<User>>(value);
 
-           
           
 
                 if (userControl.Count() > 0)
