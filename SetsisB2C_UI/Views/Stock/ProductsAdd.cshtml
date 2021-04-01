@@ -28,22 +28,27 @@
 <div class="tab-content p-3 text-muted">
     <div class="tab-pane active" id="home" role="tabpanel">
         <p class="mb-0">
-            @await Html.PartialAsync("_PartialProductsAdd01")
+            @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductsAdd01.cshtml")
         </p>
     </div>
     <div class="tab-pane" id="profile" role="tabpanel">
         <p class="mb-0">
-            @await Html.PartialAsync("_PartialProductsAdd02")
+            @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductsAdd02.cshtml")
         </p>
     </div>
     <div class="tab-pane" id="messages" role="tabpanel">
         <p class="mb-0">
-            @await Html.PartialAsync("_PartialProductsAdd03")
+            @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductsAdd03.cshtml")
         </p>
     </div>
     <div class="tab-pane" id="settings" role="tabpanel">
         <p class="mb-0">
-            @await Html.PartialAsync("_PartialProductsAdd04")
+            @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductsAdd04.cshtml")
         </p>
+    </div>
+</div>
+<div>
+    <div class="row justify-content-end">
+        <button type="button" class="btn btn-primary" style="width:120px">Ekle</button>
     </div>
 </div>

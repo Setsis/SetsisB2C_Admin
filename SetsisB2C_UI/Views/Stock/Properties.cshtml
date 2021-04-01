@@ -10,7 +10,7 @@
                     <div class="col-sm-4">
                         <div class="search-box mr-2 mb-2 d-inline-block">
                             <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Ara...">
+                                <input type="search" id="myInput" onkeyup="searchFunction()" class="form-control" placeholder="Tanım Giriniz..">
                                 <i class="bx bx-search-alt search-icon"></i>
                             </div>
                         </div>
@@ -23,7 +23,7 @@
                     <!-- end col-->
                 </div>
                 <div class="table-responsive">
-                    <table class="table table-centered table-nowrap">
+                    <table id="myTable" class="table table-centered table-nowrap">
                         <thead class="thead-light">
                             <tr>
                                 <th style="width:3000px">Tanım</th>
@@ -33,8 +33,8 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @*Tablo*@
                             <tr>
-                                @*Tanım*@
                                 <td>Renk</td>
                                 <td>
                                     <a asp-action="PropertyValues" class="mr-3 text-primary row justify-content-end" data-placement="top" title="" data-original-title="Edit"><i class="bx bxs-folder-open"></i></a>
@@ -45,7 +45,31 @@
                                     <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#PropertiesUpdate"><i title="Güncelle" class="mdi mdi-pencil font-size-18"></i></a>
                                     <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#PropertiesDelete"><i title="Sil" class="mdi mdi-close font-size-18"></i></a>
                                 </td>
-                            </tr>                    
+                            </tr>
+                            <tr>
+                                <td>Şekil</td>
+                                <td>
+                                    <a asp-action="PropertyValues" class="mr-3 text-primary row justify-content-end" data-placement="top" title="" data-original-title="Edit"><i class="bx bxs-folder-open"></i></a>
+                                <td class="row justify-content-center">
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ValuesAdd"><i class="bx bx-add-to-queue"></i></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#PropertiesUpdate"><i title="Güncelle" class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#PropertiesDelete"><i title="Sil" class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Beden</td>
+                                <td>
+                                    <a asp-action="PropertyValues" class="mr-3 text-primary row justify-content-end" data-placement="top" title="" data-original-title="Edit"><i class="bx bxs-folder-open"></i></a>
+                                <td class="row justify-content-center">
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ValuesAdd"><i class="bx bx-add-to-queue"></i></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#PropertiesUpdate"><i title="Güncelle" class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#PropertiesDelete"><i title="Sil" class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -70,7 +94,32 @@
         </div>
     </div>
 </div>
-@await Html.PartialAsync("_PartialPropertiesAdd")
-@await Html.PartialAsync("_PartialPropertiesUpdate")
-@await Html.PartialAsync("_PartialPropertiesDelete")
-@await Html.PartialAsync("_PartialValuesAdd")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialPropertiesAdd.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialPropertiesUpdate.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialPropertiesDelete.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialValuesAdd.cshtml")
+
+<script>
+    function searchFunction() {
+
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        console.log(input);
+        filter = input.value.toUpperCase();
+        console.log(filter);
+        table = document.getElementById("myTable");
+        console.log(table);
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

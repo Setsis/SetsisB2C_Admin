@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TthgcpbVlsd2UETyrvAeHWwXxc2Z3zY61AHMv4wiOfDIMVTSjnck7YGdyELTHF6AeGreo6SX+R79Do1GUW9ieQ==",
+  "dgSpecHash": "1EX5ZARGkxu2hX7jib2CQphh4xUyTTY6dMJWCknoaWb3nn1xImOy/Q6CngoOZkdRY0OMIGBZgmfYAhfPxlWGNQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\Sinan\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512"
+  ],
+  "logs": []
 }

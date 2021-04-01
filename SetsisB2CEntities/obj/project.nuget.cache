@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zjPgbMuEWQoiKXqQmBpG0pmxpiVVG2kCANRmOMKDn1amfcV7PBbkiaAne2p0T+aPyLCdj1mfp1kPdI/mWu4bgw==",
+  "dgSpecHash": "RYAVwCv1UIv9ylYodAmg6ZwzX4X9KrOCp+HEh6iTDXJ8elbmNC+Qr7X+jsQxlcjOTZOWLK3yUI98m3i8+rJF6g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sinan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Sinan\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -102,12 +103,5 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

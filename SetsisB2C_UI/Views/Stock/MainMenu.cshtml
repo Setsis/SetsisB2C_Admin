@@ -31,17 +31,26 @@
     <div class="row">
         <div class="col-lg-6 overflow-auto" style="height:400px">
 
+
             <form action="" method="post" class="form-group" style="margin-right:20px">
                 <br />
                 <h4>Kategorileri Yönet</h4>
                 <br />
-                <ul class="main">
+                @*<div class="col-sm-4">
+                        <div class="search-box mr-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="search" class="form-control" id="myInput" onkeyup="searchFunction()" placeholder="Barkod No Giriniz..">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
+                        </div>
+                    </div>*@
+                <ul id="myForm" class="main">
 
                     @foreach (var item in Model)
                     {
-                        <li data-type="wrapper" class="show">
+                        <li data-type="wrapper">
                             <div data-type="wrapper">
-                                <span data-role="expander">-</span>
+                                <span data-role="expander" class="font-weight-bold font-size-18">+</span>
                                 <input type="checkbox" id="AnaCtrg">
                                 <label for="AnaCtrg">@item.productHierarchyLevel01</label>
                                 <div class="float-right">
@@ -52,18 +61,18 @@
 
                             @foreach (var x in item.productHierarchyLevel02)
                             {
-                            <ul>
-                                <li data-type="node">
-                                    <div data-type="wrapper">
-                                        <input type="checkbox" id="AltCtgr">
-                                        <label for="AltCtgr">@x</label>
-                                        <div class="float-right">
-                                            <a style="margin-right:20px" data-toggle="modal" data-target="#CategoryUpdate"><i class="bx bx-edit-alt"></i></a>
-                                            <a data-toggle="modal" data-target="#CategoryDelete"><i class="mdi mdi-trash-can"></i></a>
+                                <ul>
+                                    <li data-type="node">
+                                        <div data-type="wrapper">
+                                            <input type="checkbox" id="AltCtgr">
+                                            <label for="AltCtgr">@x</label>
+                                            <div class="float-right">
+                                                <a style="margin-right:20px" data-toggle="modal" data-target="#CategoryUpdate"><i class="bx bx-edit-alt"></i></a>
+                                                <a data-toggle="modal" data-target="#CategoryDelete"><i class="mdi mdi-trash-can"></i></a>
+                                            </div>
                                         </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
                             }
                         </li>
                     }
@@ -74,7 +83,7 @@
         </div>
 
         <div class="col-lg-6 border-left border-dark">
-            @await Html.PartialAsync("_PartialCategoryAdd")
+            @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialCategoryAdd.cshtml")
         </div>
     </div>
 </div>
@@ -109,5 +118,28 @@
         })
     }
 </script>
-@await Html.PartialAsync("_PartialCategoryUpdate")
-@await Html.PartialAsync("_PartialCategoryDelete")
+@*<script>
+        function searchFunction() {
+            console.log("Sinan");
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            console.log(input);
+            filter = input.value.toUpperCase();
+            console.log(filter);
+            table = document.getElementById("myForm");
+            console.log(table);
+            li = table.getElementsByTagName("li");
+            for (i = 0; i < li.length; {
+                if(td) {
+                    txtValue = li.textContent || li.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>*@
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialCategoryUpdate.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialCategoryDelete.cshtml")

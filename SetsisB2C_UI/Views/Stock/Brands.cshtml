@@ -10,7 +10,7 @@
                     <div class="col-sm-4">
                         <div class="search-box mr-2 mb-2 d-inline-block">
                             <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Ara...">
+                                <input type="search" id="myInput" onkeyup="searchFunction()" class="form-control" placeholder="Marka Kodu Giriniz..">
                                 <i class="bx bx-search-alt search-icon"></i>
                             </div>
                         </div>
@@ -23,7 +23,7 @@
                     <!-- end col-->
                 </div>
                 <div class="table-responsive">
-                    <table class="table table-centered table-nowrap">
+                    <table id="myTable" class="table table-centered table-nowrap">
                         <thead class="thead-light">
                             <tr>
                                 <th style="width: 20px;">
@@ -40,6 +40,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @*Tablo*@
                             <tr>
                                 <td>
                                     <div class="custom-control custom-checkbox">
@@ -63,7 +64,52 @@
                                     <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#BrandsDelete"><i class="mdi mdi-close font-size-18"></i></a>
                                 </td>
                             </tr>
-
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">&nbsp;</label>
+                                    </div>
+                                </td>
+                                <td><a class="text-body font-weight-bold" style="width:40px">#DA152430</a> </td>
+                                <td>Setsis</td>
+                                <td>
+                                    @*<img style="width:50px;height:20px" src="@item.BrandsImg" />*@Deneme
+                                </td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
+                                        View Details
+                                    </button>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#BrandsUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#BrandsDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                        <label class="custom-control-label" for="customCheck3">&nbsp;</label>
+                                    </div>
+                                </td>
+                                <td><a class="text-body font-weight-bold" style="width:40px">#DK200430</a> </td>
+                                <td>Setsis</td>
+                                <td>
+                                    @*<img style="width:50px;height:20px" src="@item.BrandsImg" />*@Deneme
+                                </td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
+                                        View Details
+                                    </button>
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#BrandsUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#BrandsDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -88,6 +134,30 @@
         </div>
     </div>
 </div>
-@await Html.PartialAsync("_PartialBrandsAdd")
-@await Html.PartialAsync("_PartialBrandsUpdate")
-@await Html.PartialAsync("_PartialBrandsDelete")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsAdd.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsUpdate.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsDelete.cshtml")
+<script>
+    function searchFunction() {
+
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        console.log(input);
+        filter = input.value.toUpperCase();
+        console.log(filter);
+        table = document.getElementById("myTable");
+        console.log(table);
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

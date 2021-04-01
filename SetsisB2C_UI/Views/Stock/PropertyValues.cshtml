@@ -12,7 +12,7 @@
                     <div class="col-sm-4">
                         <div class="search-box mr-2 mb-2 d-inline-block">
                             <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Ara...">
+                                <input type="search" class="form-control" id="myInput" onkeyup="searchFunction()" placeholder="Değer Adı Giriniz..">
                                 <i class="bx bx-search-alt search-icon"></i>
                             </div>
                         </div>
@@ -25,7 +25,7 @@
                     <!-- end col-->
                 </div>
                 <div class="table-responsive">
-                    <table class="table table-centered table-nowrap">
+                    <table id="myTable" class="table table-centered table-nowrap">
                         <thead class="thead-light">
                             <tr>
                                 <th style="width:40px">Resim</th>
@@ -49,8 +49,34 @@
                                     <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ValuesDelete"><i class="mdi mdi-close font-size-18"></i></a>
                                 </td>
                             </tr>
-
-
+                            <tr>
+                                <td>Deneme</td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Lacivert
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="bx bx-show-alt"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ValuesUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ValuesDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Deneme</td>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Fener
+                                </td>
+                                <td>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="bx bx-show-alt"></i></a>
+                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ValuesUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ValuesDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -75,6 +101,30 @@
         </div>
     </div>
 </div>
-@await Html.PartialAsync("_PartialValuesAdd")
-@await Html.PartialAsync("_PartialValuesUpdate")
-@await Html.PartialAsync("_PartialValuesDelete")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialValuesAdd.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialValuesUpdate.cshtml")
+@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialValuesDelete.cshtml")
+<script>
+    function searchFunction() {
+
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        console.log(input);
+        filter = input.value.toUpperCase();
+        console.log(filter);
+        table = document.getElementById("myTable");
+        console.log(table);
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
