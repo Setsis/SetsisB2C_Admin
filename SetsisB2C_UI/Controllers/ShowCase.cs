@@ -12,25 +12,25 @@ namespace SetsisB2C_UI.Controllers
     public class ShowCase : Controller
     {
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(string itemCode)
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetItemDesc?ItemCode=BLZ");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetItemDesc?ItemCode=" +itemCode);
             value = apiConnect.StrResponse;
             var userControl = JsonConvert.DeserializeObject<List<Product>>(value);
 
             return View(userControl);
         }
         [HttpGet]
-        public ActionResult GeneralSettings(string itemCode)
+        public PartialViewResult GeneralSettings(string itemCode)
         {
 
             //string value = "";
-            //ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetItemDesc?ItemCode=BLZ");
+            //ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetItemDesc?ItemCode=B");
             //value = apiConnect.StrResponse;
             //var userControl = JsonConvert.DeserializeObject<List<Product>>(value);
 
-            return View();
+            return PartialView();
         }
 
 
