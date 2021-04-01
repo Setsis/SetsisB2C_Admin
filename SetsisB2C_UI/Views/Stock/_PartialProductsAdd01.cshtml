@@ -1,0 +1,213 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+
+                            <div class="form-group">
+                                <label for="productname">Ürün Adı</label>
+                                <input id="productname" name="productname" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="manufacturername">Ürün Barkod</label>
+                                <input id="productbarcode" name="productbarcode" type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Marka</label>
+                                <select class="form-control select1">
+                                    <option>Setsis</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="productSize">Garanti Süresi</label>
+                                    <input id="productwarranty" name="productdesi" value="1" type="number" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6"  style="margin-top:8px">
+                                    <div class="form-group">
+                                        <label for="stockCode">Stok Kodu</label>
+                                        <input id="stockCode" name="stockCode" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6"  style="margin-top:8px">
+                                    <div class="form-group">
+                                        <label for="stockCode">Stok Adedi</label>
+                                        <input id="productstock" name="productstock" value="1" type="number" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productColor">Alış Fiyatı</label>
+                                        <input id="productbuy" name="productbuy" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productSize">Satış Fiyatı</label>
+                                        <input id="productsell" name="productsell" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productColor">İndirimli Fiyat</label>
+                                        <input id="productdiscount" name="productdiscount" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">İndirim Türü</label>
+                                        <select class="form-control select2">
+                                            <option>Seç</option>
+                                            <option>Sürekli</option>
+                                            <option>Tarih Aralığına Göre</option>
+                                            <option>Stok Miktarına Göre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label class="control-label">Ana Kategori</label>
+                                <select class="form-control select2">
+                                    <option>Seç</option>
+                                    <option>Oturma Odası</option>
+                                    <option>Yatak Odası</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Alt Kategori</label>
+                                <select class="form-control select2">
+                                    <option>Seç</option>
+                                    <option>Koltuk</option>
+                                    <option>Berjer</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Tedarikçi Firma</label>
+                                <select class="form-control select2">
+                                    <option>Seç</option>
+                                    <option>Setsis</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-md-12 col-form-label">KDV Dahil mi?</label>
+                                        <div class="custom-control custom-radio custom-control-inline custom-radio-primary mb-3">
+                                            <input type="radio" id="RadioKDV2" name="RadioPrice" class="custom-control-input" value="WithKdv">
+                                            <label class="custom-control-label" for="RadioKDV2">Dahil</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline custom-radio-primary mb-3">
+                                            <input type="radio" id="RadioKDV1" name="RadioPrice" class="custom-control-input" value="WithoutKdv">
+                                            <label class="custom-control-label" for="RadioKDV1">Dahil Değil</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="example-text-input" class="col-md-12 col-form-label">Kargo</label>
+                                        <div class="custom-control custom-radio custom-control-inline custom-radio-primary mb-3">
+                                            <input type="radio" id="RadioCargo1" name="RadioPrice" class="custom-control-input" value="WithKdv">
+                                            <label class="custom-control-label" for="RadioCargo1">Ücretli</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline custom-radio-primary mb-3">
+                                            <input type="radio" id="RadioCargo2" name="RadioPrice" class="custom-control-input" value="WithoutKdv">
+                                            <label class="custom-control-label" for="RadioCargo2">Ücretsiz</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productSize">KDV Oranı</label>
+                                        <input id="productkdvrate" name="productkdvrate" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productSize">Kargo Fiyatı</label>
+                                        <input id="productcargoprice" name="productcargoprice" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Para Birimi</label>
+                                        <select class="form-control select2">
+                                            <option>Seç</option>
+                                            <option>TL</option>
+                                            <option>USD</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="control-label">Satış Birimi</label>
+                                        <select class="form-control select2">
+                                            <option>Seç</option>
+                                            <option>Adet</option>
+                                            <option>Kilogram</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productSize">Desi</label>
+                                        <input id="productdesi" name="productdesi" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="productSize">Son Fiyatı</label>
+                                        <input id="productendprice" name="productendprice" type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:15px">
+                        <div class="col-sm-12">
+                            <div class="custom-file mb-3">
+                                <input type="file" class="custom-file-input" id="AddPhotos">
+                                <label class="custom-file-label" for="AddPhotos">Fotoğraf Ekle</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end">
+                        <button type="button" class="btn btn-primary" style="width:120px">Ekle</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end row -->

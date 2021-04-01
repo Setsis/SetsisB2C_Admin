@@ -137,5 +137,29 @@ namespace SetsisB2C_UI.Controllers
         {
             return View();
         }
+        public IActionResult _PartialProductsDelete()
+        {
+            return View();
+        }
+        public IActionResult ProductsAdd()
+        {
+            return View();
+        }
+        public IActionResult _PartialProductsAdd01()
+        {
+            return View();
+        }
+        public IActionResult _PartialProductsAdd02()
+        {
+            return View();
+        }
+        public IActionResult _PartialProductsAdd03()
+        {
+            return View();
+        }
+        public IActionResult _PartialProductsAdd04()
+        {
+            return View();
+        }
     }
 }

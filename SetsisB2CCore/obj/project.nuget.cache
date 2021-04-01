@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "EPj1bsQ7ymli+JT1ahcSW0+MPJXafzA1ipXm93tAimPwpSNBClwNvQsGTsv+ONWD3oHJWAcNPiYpaNNHEXMprA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
-=======
   "dgSpecHash": "FGASTSvhkohdF2oDlO+HOJwwQSsr2p94F9Ojw08zBCdnpkVAF/txJ0HKYohVnhOw9ObIFBtJ6EiHA28kXi4Tdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.4\\microsoft.entityframeworkcore.5.0.4.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.4\\microsoft.entityframeworkcore.abstractions.5.0.4.nupkg.sha512",
@@ -25,5 +19,12 @@
     "C:\\Users\\Sinan\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

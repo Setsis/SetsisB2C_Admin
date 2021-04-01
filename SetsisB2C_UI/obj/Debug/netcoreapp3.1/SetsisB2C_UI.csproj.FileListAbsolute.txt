@@ -510,3 +510,12 @@ C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreap
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductEditPrice.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsUpdate.cshtml.g.cs
 >>>>>>> Stashed changes
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialView\PartialGeneralSetting.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialView\PartialTabPage.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\ShowCase\Index.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\ProductsAdd.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsDelete.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsAdd01.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsAdd02.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsAdd03.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsAdd04.cshtml.g.cs

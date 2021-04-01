@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "Zxr2+Y+ViyPjemAN7n16mSgkLY1viu+CLpN2LM/e3O1JZgtKFRrQO2/ckkWBZs5GUYjpUIYg+FjWIcMZoCtJJQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
-=======
   "dgSpecHash": "zjPgbMuEWQoiKXqQmBpG0pmxpiVVG2kCANRmOMKDn1amfcV7PBbkiaAne2p0T+aPyLCdj1mfp1kPdI/mWu4bgw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\Sinan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sinan\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -108,5 +102,12 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

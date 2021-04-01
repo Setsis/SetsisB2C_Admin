@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "rN6ULEd4KZxyNVSdvnGmrycH7eEcSnrA3ng3S96PoZH5YGdbg6NTPUcUMK99NVWwKcc/1ortSsJwuUiDPAwmbw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-=======
   "dgSpecHash": "TthgcpbVlsd2UETyrvAeHWwXxc2Z3zY61AHMv4wiOfDIMVTSjnck7YGdyELTHF6AeGreo6SX+R79Do1GUW9ieQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
->>>>>>> Stashed changes
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
