@@ -118,7 +118,12 @@ namespace SetsisB2C_UI.Controllers
         }
         public IActionResult _PartialCategoryAdd()
         {
-            return View();
+            Root rt;
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetHierarchy");
+            value = apiConnect.StrResponse;
+            rt = JsonConvert.DeserializeObject<Root>(value);
+            return View(rt.Hierarchies.ToList());
         }
         //Ürün Yönetimi Controller Başlangıcı
         public IActionResult Products()
