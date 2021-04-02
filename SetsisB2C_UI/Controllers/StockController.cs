@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SetsisB2B.Class;
+using SetsisB2C_UI.Models.Brands;
 using SetsisB2C_UI.Models.Hierarchy;
 using System;
 using System.Collections.Generic;
@@ -33,8 +34,13 @@ namespace SetsisB2C_UI.Controllers
         }
         //Marka Yönetimi Controller Başlangıcı
         public IActionResult Brands()
-        {
-            return View();
+        {   
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
+            value = apiConnect.StrResponse;
+            var br = JsonConvert.DeserializeObject<List<Brands>>(value);
+            return View(br);
+            
         }
         public IActionResult _PartialBrandsAdd()
         {
@@ -118,12 +124,7 @@ namespace SetsisB2C_UI.Controllers
         }
         public IActionResult _PartialCategoryAdd()
         {
-            Root rt;
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetHierarchy");
-            value = apiConnect.StrResponse;
-            rt = JsonConvert.DeserializeObject<Root>(value);
-            return View(rt.Hierarchies.ToList());
+            return View();
         }
         //Ürün Yönetimi Controller Başlangıcı
         public IActionResult Products()
