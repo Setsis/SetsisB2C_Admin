@@ -510,6 +510,7 @@ C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreap
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductEditPrice.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsUpdate.cshtml.g.cs
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialView\PartialGeneralSetting.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\PartialView\PartialTabPage.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\ShowCase\Index.cshtml.g.cs
@@ -542,3 +543,33 @@ C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreap
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PartialView\_PartialValuesAdd.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PartialView\_PartialValuesDelete.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PartialView\_PartialValuesUpdate.cshtml.g.cs
+=======
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Design\ShowCase.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Design\TopHeader.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\Brands.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\MainMenu.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\Products.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\Properties.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PropertyValues.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\Supliers.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialBrandsAdd.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialBrandsDelete.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialBrandsUpdate.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialCategoryAdd.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialCategoryDelete.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialCategoryUpdate.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductEditPrice.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductPhotos.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialProductsUpdate.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialPropertiesAdd.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialPropertiesDelete.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialPropertiesUpdate.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialSupliersAdd.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialSupliersDelete.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialSupliersUpdate.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialValuesAdd.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialValuesDelete.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\_PartialValuesUpdate.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\ShowCase\GeneralSettings.cshtml.g.cs
+C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\ShowCase\PartialTabPage.cshtml.g.cs
+>>>>>>> Sector2

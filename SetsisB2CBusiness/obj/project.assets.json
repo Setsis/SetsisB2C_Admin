@@ -38,25 +38,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sinan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\emirh\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+      "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
       "projectName": "SetsisB2C_Business",
-      "projectPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-      "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
+      "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+      "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Sinan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emirh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -64,6 +65,7 @@
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -103,8 +105,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

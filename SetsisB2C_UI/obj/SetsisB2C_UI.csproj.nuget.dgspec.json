@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {}
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+        "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
         "projectName": "SetsisB2C_UI",
-        "projectPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
-        "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
+        "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+        "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sinan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\emirh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,6 +27,7 @@
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -80,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200-preview.20614.14\\RuntimeIdentifierGraph.json"
         }
       }
     }
