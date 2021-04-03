@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SetsisB2B.Class;
 using SetsisB2C_UI.Models.Brands;
@@ -12,28 +13,8 @@ namespace SetsisB2C_UI.Controllers
 {
     public class StockController : Controller
     {
-        public IActionResult GetStock()
-        {
-            return View();
-        }
-        public IActionResult AddStock()
-        {
-            return View();
-        }
-        public IActionResult RequestStock()
-        {
-            return View();
-        }
-        public IActionResult ProductStocked()
-        {
-            return View();
-        }
-        public IActionResult ProductStockless()
-        {
-            return View();
-        }
         //Marka Yönetimi Controller Başlangıcı
-        public IActionResult Brands()
+        public IActionResult ManageBrand()
         {   
             string value = "";
             ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
@@ -42,10 +23,21 @@ namespace SetsisB2C_UI.Controllers
             return View(br);
             
         }
+        [HttpGet]
         public IActionResult _PartialBrandsAdd()
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult CreateBrands(string BrandName, string BrandCode, IFormFile BrandImgPath)
+        {
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2023/Stock/AddBrands?BrandName={BrandName}&BrandCode={BrandCode}&BrandImgPath={BrandImgPath}");
+            value = apiConnect.StrResponse;
+            var br = JsonConvert.DeserializeObject<object>(value);
+            return RedirectToAction("ManageBrand");
+        }
+        [HttpGet]
         public IActionResult _PartialBrandsUpdate()
         {
             return View();
@@ -55,7 +47,7 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
         //Tedarikçi Yönetimi Başlangıcı
-        public IActionResult Supliers()
+        public IActionResult ManageSuplier()
         {
             return View();
         }
@@ -72,7 +64,7 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
         //Özellik Yönetimi Controller Başlangıcı
-        public IActionResult Properties()
+        public IActionResult ManageProperty()
         {
             return View();
         }
@@ -105,7 +97,7 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
         //Kategori Yönetimi Controller Başlangıcı
-        public IActionResult MainMenu()
+        public IActionResult ManageCategory()
         {
             Root rt;
             string value = "";
@@ -124,10 +116,15 @@ namespace SetsisB2C_UI.Controllers
         }
         public IActionResult _PartialCategoryAdd()
         {
-            return View();
+            Root rt;
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetHierarchy");
+            value = apiConnect.StrResponse;
+            rt = JsonConvert.DeserializeObject<Root>(value);
+            return View(rt.Hierarchies.ToList());
         }
         //Ürün Yönetimi Controller Başlangıcı
-        public IActionResult Products()
+        public IActionResult ManageProduct()
         {
             return View();
         }

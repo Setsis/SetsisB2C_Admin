@@ -542,3 +542,8 @@ C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreap
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PartialView\_PartialValuesAdd.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PartialView\_PartialValuesDelete.cshtml.g.cs
 C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\PartialView\_PartialValuesUpdate.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\ManageBrand.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\ManageCategory.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\ManageProduct.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\ManageProperty.cshtml.g.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2C_UI\obj\Debug\netcoreapp3.1\Razor\Views\Stock\ManageSuplier.cshtml.g.cs
