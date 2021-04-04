@@ -40,11 +40,37 @@ namespace SetsisB2C_UI.Controllers
         [HttpGet]
         public IActionResult _PartialBrandsUpdate()
         {
-            return View();
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
+            value = apiConnect.StrResponse;
+            var br = JsonConvert.DeserializeObject<List<Brands>>(value);
+            return View(br);
         }
+        public IActionResult UpdateBrand(string? BrandName, string? BrandCode, IFormFile? BrandImgPath, Guid? BrandID)
+        {
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2023/Stock/UpdateBrands?BrandName={BrandName}&BrandCode={BrandCode}&BrandImgPath={BrandImgPath}&BrandID={BrandID}");
+            value = apiConnect.StrResponse;
+            var br = JsonConvert.DeserializeObject<object>(value);
+            return RedirectToAction("ManageBrand");
+        }
+        [HttpGet]
         public IActionResult _PartialBrandsDelete()
         {
-            return View();
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
+            value = apiConnect.StrResponse;
+            var br = JsonConvert.DeserializeObject<List<Brands>>(value);
+            return View(br);
+        }
+        [HttpPost]
+        public IActionResult DeleteBrand(Guid? BrandID)
+        {
+            string value = "";
+            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2023/Stock/DeleteBrands?BrandID={BrandID}");
+            value = apiConnect.StrResponse;
+            var br = JsonConvert.DeserializeObject<object>(value);
+            return RedirectToAction("ManageBrand");
         }
         //Tedarikçi Yönetimi Başlangıcı
         public IActionResult ManageSuplier()

@@ -54,7 +54,7 @@
                                     <td><a class="text-body font-weight-bold" style="width:40px">@item.brandCode</a> </td>
                                     <td>@item.brandName</td>
                                     <td>
-                                        @*<img style="width:50px;height:20px" src="@item.BrandsImg" />*@@item.brandImgPath
+                                        <img style="width:70px;height:30px" src="@item.brandImgPath" />
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -63,15 +63,12 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#BrandsUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
-                                        <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#BrandsDelete"><i class="mdi mdi-close font-size-18"></i></a>
+                                        <a href="javascript:void(0);" class="mr-3 text-primary" onclick="UpdateBrandd('@item.brandID','@item.brandCode','@item.brandName','@item.brandImgPath')" data-placement="top" title="" data-original-title="Edit"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
+                                        <a href="javascript:void(0);" class="text-danger"  onclick="DeleteBrandd('@item.brandID','@item.brandCode','@item.brandName','@item.brandImgPath')" data-placement="top" title="" data-original-title="Delete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
                                     </td>
                                 </tr>
 
                             }
-
-
-
                         </tbody>
                     </table>
                 </div>
@@ -100,6 +97,20 @@
 @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsUpdate.cshtml")
 @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsDelete.cshtml")
 <script>
+    function UpdateBrandd(brandID,brandCode,brandName,brandImgPath) {
+        console.log(brandID, brandCode, brandName, brandImgPath);
+        document.querySelector('#BrandsUpdate #markaadi').value = brandName;
+        document.querySelector('#BrandsUpdate #markakodu').value = brandCode;
+        document.querySelector('#BrandsUpdate #markafotografilabel').innerText = brandImgPath;
+        $('#BrandsUpdate').modal('show');
+
+    }
+    function DeleteBrandd(brandID, brandCode, brandName, brandImgPath) {
+        console.log(brandID, brandCode, brandName, brandImgPath);
+        document.querySelector('#BrandsDelete #SilinenMarka').innerText = brandName;
+        $('#BrandsDelete').modal('show');
+
+    }
     function searchFunction() {
 
         var input, filter, table, tr, td, i, txtValue;
