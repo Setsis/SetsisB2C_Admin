@@ -25,3 +25,12 @@ C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\Se
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.dll
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.pdb
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\bin\Debug\netcoreapp3.1\SetsisB2C_Business.deps.json
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\bin\Debug\netcoreapp3.1\SetsisB2C_Business.dll
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\bin\Debug\netcoreapp3.1\SetsisB2C_Business.pdb
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.csprojAssemblyReference.cache
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.AssemblyInfoInputs.cache
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.AssemblyInfo.cs
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.csproj.CoreCompileInputs.cache
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.dll
+C:\Users\Sinan\Documents\GitHub\SetsisB2C_Admin\SetsisB2CBusiness\obj\Debug\netcoreapp3.1\SetsisB2C_Business.pdb

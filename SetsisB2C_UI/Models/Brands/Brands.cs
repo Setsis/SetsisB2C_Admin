@@ -7,10 +7,10 @@ namespace SetsisB2C_UI.Models.Brands
 {
     public class Brands
     {
-            public string brandID { get; set; }
-            public string brandName { get; set; }
-            public string brandCode { get; set; }
-            public string brandImgPath { get; set; }
+            public string BrandID { get; set; }
+            public string BrandName { get; set; }
+            public string BrandCode { get; set; }
+            public string BrandImgPath { get; set; }
         
     }
 }

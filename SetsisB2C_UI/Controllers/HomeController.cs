@@ -27,7 +27,7 @@ namespace SetsisB2C_UI.Controllers
         public IActionResult Slider(SliderSettings sliderSettings)
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/UserControl?Username=" + sliderSettings.Orders + "&Password=" + sliderSettings.Name);
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/UserControl?Username=" + sliderSettings.Orders + "&Password=" + sliderSettings.Name);
             value = apiConnect.StrResponse;
             var userControl = JsonConvert.DeserializeObject<List<User>>(value);
 

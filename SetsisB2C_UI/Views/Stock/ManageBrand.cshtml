@@ -51,10 +51,10 @@
                                             <label class="custom-control-label" for="customCheck3">&nbsp;</label>
                                         </div>
                                     </td>
-                                    <td><a class="text-body font-weight-bold" style="width:40px">@item.brandCode</a> </td>
-                                    <td>@item.brandName</td>
+                                    <td><a class="text-body font-weight-bold" style="width:40px">@item.BrandCode</a> </td>
+                                    <td>@item.BrandName</td>
                                     <td>
-                                        <img style="width:70px;height:30px" src="@item.brandImgPath" />
+                                        <img style="width:70px;height:30px" src="@item.BrandImgPath" />
                                     </td>
                                     <td>
                                         <!-- Button trigger modal -->
@@ -63,8 +63,8 @@
                                         </button>
                                     </td>
                                     <td>
-                                        <a href="javascript:void(0);" class="mr-3 text-primary" onclick="UpdateBrandd('@item.brandID','@item.brandCode','@item.brandName','@item.brandImgPath')" data-placement="top" title="" data-original-title="Edit"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
-                                        <a href="javascript:void(0);" class="text-danger"  onclick="DeleteBrandd('@item.brandID','@item.brandCode','@item.brandName','@item.brandImgPath')" data-placement="top" title="" data-original-title="Delete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
+                                        <a href="javascript:void(0);" class="mr-3 text-primary" onclick="UpdateBrandd('@item.BrandID','@item.BrandCode','@item.BrandName','@item.BrandImgPath')" data-placement="top" title="" data-original-title="Edit"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
+                                        <a href="javascript:void(0);" class="text-danger" onclick="DeleteBrandd('@item.BrandID','@item.BrandCode','@item.BrandName','@item.BrandImgPath')" data-placement="top" title="" data-original-title="Delete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
                                     </td>
                                 </tr>
 
@@ -97,17 +97,18 @@
 @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsUpdate.cshtml")
 @await Html.PartialAsync("~/Views/Stock/PartialView/_PartialBrandsDelete.cshtml")
 <script>
-    function UpdateBrandd(brandID,brandCode,brandName,brandImgPath) {
-        console.log(brandID, brandCode, brandName, brandImgPath);
-        document.querySelector('#BrandsUpdate #markaadi').value = brandName;
-        document.querySelector('#BrandsUpdate #markakodu').value = brandCode;
-        document.querySelector('#BrandsUpdate #markafotografilabel').innerText = brandImgPath;
+    function UpdateBrandd(BrandID, BrandCode, BrandName, BrandImgPath) {
+        console.log(BrandID, BrandCode, BrandName, BrandImgPath);
+        document.querySelector('#BrandsUpdate #markaadi').value = BrandName;
+        document.querySelector('#BrandsUpdate #markakodu').value = BrandCode;
+        document.querySelector('#BrandsUpdate #markafotografilabel').innerText = BrandImgPath;
         $('#BrandsUpdate').modal('show');
 
     }
-    function DeleteBrandd(brandID, brandCode, brandName, brandImgPath) {
-        console.log(brandID, brandCode, brandName, brandImgPath);
-        document.querySelector('#BrandsDelete #SilinenMarka').innerText = brandName;
+    function DeleteBrandd(BrandID, BrandCode, BrandName, BrandImgPath) {
+        console.log(BrandID, BrandCode, BrandName, BrandImgPath);
+        document.querySelector('#BrandsDelete #DeleteID').value = BrandID;
+        document.querySelector('#BrandsDelete #SilinenMarka').innerText = BrandName;
         $('#BrandsDelete').modal('show');
 
     }

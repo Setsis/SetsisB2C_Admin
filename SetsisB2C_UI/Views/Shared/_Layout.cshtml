@@ -26,24 +26,12 @@
 
         <header id="page-topbar">
             <div class="navbar-header">
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <!-- LOGO -->
-                    <div class="navbar-brand-box">
-                        <a href="index.html" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="~/HTML/Admin/dist/assets/images/logo.svg" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="17">
-                            </span>
-                        </a>
-
-                        <a href="index.html" class="logo logo-light">
-                            <span class="logo-sm">
-                                <img src="~/HTML/Admin/dist/assets/images/logo-light.svg" alt="" height="22">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="~/HTML/Admin/dist/assets/images/logo-light.png" alt="" height="19">
+                    <div class="navbar-brand-box" style="width:auto">
+                        <a asp-controller="Home" asp-action="Index" class="logo logo-light" style="margin-bottom:14px">
+                            <span class="logo-lg" >
+                                <img src="~/HTML/Admin/dist/assets/images/Setsis.png" alt="" width="120">
                             </span>
                         </a>
                     </div>
@@ -55,141 +43,10 @@
                     <!-- App Search-->
                     <form class="app-search d-none d-lg-block">
                         <div class="position-relative">
-                            <input type="text" class="form-control" placeholder="Search...">
+                            <input type="text" class="form-control" placeholder="Ara...">
                             <span class="bx bx-search-alt"></span>
                         </div>
                     </form>
-
-                    <div class="dropdown dropdown-mega d-none d-lg-block ml-2">
-                        <button type="button" class="btn header-item waves-effect" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-                            <span key="t-megamenu">Mega Menu</span>
-                            <i class="mdi mdi-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-megamenu">
-                            <div class="row">
-                                <div class="col-sm-8">
-
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <h5 class="font-size-14 mt-0" key="t-ui-components">UI Components</h5>
-                                            <ul class="list-unstyled megamenu-list">
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-lightbox">Lightbox</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-range-slider">Range Slider</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-sweet-alert">Sweet Alert</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-rating">Rating</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-forms">Forms</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-tables">Tables</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-charts">Charts</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <h5 class="font-size-14 mt-0" key="t-applications">Applications</h5>
-                                            <ul class="list-unstyled megamenu-list">
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-ecommerce">Ecommerce</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-calendar">Calendar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-email">Email</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-projects">Projects</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-tasks">Tasks</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-contacts">Contacts</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-md-4">
-                                            <h5 class="font-size-14 mt-0" key="t-extra-pages">Extra Pages</h5>
-                                            <ul class="list-unstyled megamenu-list">
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-light-sidebar">Light Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-compact-sidebar">Compact Sidebar</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-horizontal">Horizontal layout</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-maintenance">Maintenance</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-coming-soon">Coming Soon</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-timeline">Timeline</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-faqs">FAQs</a>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h5 class="font-size-14 mt-0" key="t-ui-components">UI Components</h5>
-                                            <ul class="list-unstyled megamenu-list">
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-lightbox">Lightbox</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-range-slider">Range Slider</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-sweet-alert">Sweet Alert</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-rating">Rating</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-forms">Forms</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-tables">Tables</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0);" key="t-charts">Charts</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="col-sm-5">
-                                            <div>
-                                                <img src="~/HTML/Admin/dist/assets/images/megamenu-img.png" alt="" class="img-fluid mx-auto d-block">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
 
                 <div class="d-flex">
@@ -198,111 +55,6 @@
                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="mdi mdi-magnify"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
-                             aria-labelledby="page-header-search-dropdown">
-
-                            <form class="p-3">
-                                <div class="form-group m-0">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item waves-effect"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img id="header-lang-img" src="~/HTML/Admin/dist/assets/images/flags/us.jpg" alt="Header Language" height="16">
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="eng">
-                                <img src="~/HTML/Admin/dist/assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">English</span>
-                            </a>
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="sp">
-                                <img src="~/HTML/Admin/dist/assets/images/flags/spain.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Spanish</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="gr">
-                                <img src="~/HTML/Admin/dist/assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">German</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="it">
-                                <img src="~/HTML/Admin/dist/assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Italian</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item language" data-lang="ru">
-                                <img src="~/HTML/Admin/dist/assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12"> <span class="align-middle">Russian</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-none d-lg-inline-block ml-1">
-                        <button type="button" class="btn header-item noti-icon waves-effect"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="bx bx-customize"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                            <div class="px-lg-2">
-                                <div class="row no-gutters">
-                                    <div class="col">
-                                        <a class="dropdown-icon-item" href="#">
-                                            <img src="~/HTML/Admin/dist/assets/images/brands/github.png" alt="Github">
-                                            <span>GitHub</span>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a class="dropdown-icon-item" href="#">
-                                            <img src="~/HTML/Admin/dist/assets/images/brands/bitbucket.png" alt="bitbucket">
-                                            <span>Bitbucket</span>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a class="dropdown-icon-item" href="#">
-                                            <img src="~/HTML/Admin/dist/assets/images/brands/dribbble.png" alt="dribbble">
-                                            <span>Dribbble</span>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="row no-gutters">
-                                    <div class="col">
-                                        <a class="dropdown-icon-item" href="#">
-                                            <img src="~/HTML/Admin/dist/assets/images/brands/dropbox.png" alt="dropbox">
-                                            <span>Dropbox</span>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a class="dropdown-icon-item" href="#">
-                                            <img src="~/HTML/Admin/dist/assets/images/brands/mail_chimp.png" alt="mail_chimp">
-                                            <span>Mail Chimp</span>
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a class="dropdown-icon-item" href="#">
-                                            <img src="~/HTML/Admin/dist/assets/images/brands/slack.png" alt="slack">
-                                            <span>Slack</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="dropdown d-none d-lg-inline-block ml-1">
-                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
-                            <i class="bx bx-fullscreen"></i>
                         </button>
                     </div>
 
@@ -317,10 +69,10 @@
                             <div class="p-3">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                        <h6 class="m-0" key="t-notifications"> Bildirimler </h6>
                                     </div>
                                     <div class="col-auto">
-                                        <a href="#!" class="small" key="t-view-all"> View All</a>
+                                        <a href="#!" class="small" key="t-view-all">Tümünü Gör</a>
                                     </div>
                                 </div>
                             </div>
@@ -333,23 +85,9 @@
                                             </span>
                                         </div>
                                         <div class="media-body">
-                                            <h6 class="mt-0 mb-1" key="t-your-order">Your order is placed</h6>
+                                            <h6 class="mt-0 mb-1" key="t-your-order">Siparişiniz verildi.</h6>
                                             <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="" class="text-reset notification-item">
-                                    <div class="media">
-                                        <img src="~/HTML/Admin/dist/assets/images/users/avatar-3.jpg"
-                                             class="mr-3 rounded-circle avatar-xs" alt="user-pic">
-                                        <div class="media-body">
-                                            <h6 class="mt-0 mb-1">James Lemire</h6>
-                                            <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 Dakika Önce</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -357,37 +95,23 @@
                                 <a href="" class="text-reset notification-item">
                                     <div class="media">
                                         <div class="avatar-xs mr-3">
-                                            <span class="avatar-title bg-success rounded-circle font-size-16">
-                                                <i class="bx bx-badge-check"></i>
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                <i class="bx bx-cart"></i>
                                             </span>
                                         </div>
                                         <div class="media-body">
-                                            <h6 class="mt-0 mb-1" key="t-shipped">Your item is shipped</h6>
+                                            <h6 class="mt-0 mb-1">Siparişiniz kargolandı.</h6>
                                             <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 Saat Önce</span></p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
-
-                                <a href="" class="text-reset notification-item">
-                                    <div class="media">
-                                        <img src="~/HTML/Admin/dist/assets/images/users/avatar-4.jpg"
-                                             class="mr-3 rounded-circle avatar-xs" alt="user-pic">
-                                        <div class="media-body">
-                                            <h6 class="mt-0 mb-1">Salena Layfield</h6>
-                                            <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                                
                             </div>
                             <div class="p-2 border-top">
                                 <a class="btn btn-sm btn-link font-size-14 btn-block text-center" href="javascript:void(0)">
-                                    <i class="mdi mdi-arrow-right-circle mr-1"></i> <span key="t-view-more">View More..</span>
+                                    <i class="mdi mdi-arrow-right-circle mr-1"></i> <span key="t-view-more">Daha Fazla...</span>
                                 </a>
                             </div>
                         </div>
@@ -396,9 +120,9 @@
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="~/HTML/Admin/dist/assets/images/users/avatar-1.jpg"
+                            <img class="rounded-circle header-profile-user" src="~/HTML/Admin/dist/assets/images/brands/profil.png"
                                  alt="Header Avatar">
-                            <span class="d-none d-xl-inline-block ml-1" key="t-henry">Henry</span>
+                            <span class="d-none d-xl-inline-block ml-1" key="t-henry">Setsis</span>
                             <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right">
@@ -411,13 +135,6 @@
                             <a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> <span key="t-logout">Logout</span></a>
                         </div>
                     </div>
-
-                    <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                            <i class="bx bx-cog bx-spin"></i>
-                        </button>
-                    </div>
-
                 </div>
             </div>
         </header>
@@ -442,19 +159,25 @@
                                     <span key="t-ui-elements">Siparişler</span>
                                     <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-sm"
-                                     aria-labelledby="topnav-uielement">
+                                <div class="dropdown-menu dropdown-mega-menu-sm" style="width:300px">
                                     <div class="row">
-                                        <div class="col-lg-2">
-                                            <div>
-                                                <a asp-controller="Order" asp-action="AllOrder" class="dropdown-item" key="t-alerts">Tüm Siparişler</a>
-                                                <a asp-controller="Order" asp-action="ReturnOrder" class="dropdown-item" key="t-buttons">İade Edilenler</a>
-                                                <a asp-controller="Order" asp-action="SlipsOrder" class="dropdown-item" key="t-cards">Etiket Yazdır</a>
-                                                <a asp-controller="Order" asp-action="BillsOrder" class="dropdown-item" key="t-carousel">İrsalyeler</a>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a asp-controller="Order" asp-action="AllOrder" class="dropdown-item" key="t-alerts">Tüm Siparişler</a>
+                                                    <a asp-controller="Order" asp-action="ReturnOrder" class="dropdown-item" key="t-buttons">İade Edilenler</a>
+                                                    <a asp-controller="Order" asp-action="SlipsOrder" class="dropdown-item" key="t-cards">Etiket Yazdır</a>
+                                                    <a asp-controller="Order" asp-action="BillsOrder" class="dropdown-item" key="t-carousel">İrsalyeler</a>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
                                     </div>
-
                                 </div>
                             </li>
 
@@ -463,12 +186,26 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bx bx-box mr-2"></i><span key="t-apps">Stok</span> <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-pages">
-                                    <a asp-controller="Stock" asp-action="ManageCategory" class="dropdown-item" key="t-calendar">Kategori Yönetimi</a>
-                                    <a asp-controller="Stock" asp-action="ManageBrand" class="dropdown-item" key="t-calendar">Marka Yönetimi</a>
-                                    <a asp-controller="Stock" asp-action="ManageSuplier" class="dropdown-item" key="t-calendar">Tedarikçi Yönetimi</a>
-                                    <a asp-controller="Stock" asp-action="ManageProperty" class="dropdown-item" key="t-calendar">Özellik Yönetimi</a>
-                                    <a asp-controller="Stock" asp-action="ManageProduct" class="dropdown-item" key="t-calendar">Ürün Yönetimi</a>
+                                <div class="dropdown-menu dropdown-mega-menu-sm" style="width:300px">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a asp-controller="Stock" asp-action="ManageCategory" class="dropdown-item" key="t-calendar">Kategori Yönetimi</a>
+                                                    <a asp-controller="Stock" asp-action="ManageBrand" class="dropdown-item" key="t-calendar">Marka Yönetimi</a>
+                                                    <a asp-controller="Stock" asp-action="ManageSuplier" class="dropdown-item" key="t-calendar">Tedarikçi Yönetimi</a>
+                                                    <a asp-controller="Stock" asp-action="ManageProperty" class="dropdown-item" key="t-calendar">Özellik Yönetimi</a>
+                                                    <a asp-controller="Stock" asp-action="ManageProduct" class="dropdown-item" key="t-calendar">Ürün Yönetimi</a>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
 
@@ -477,28 +214,23 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bx bxs-pencil mr-2"></i><span key="t-components">Tasarım Ayarları</span> <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-components">
-                                    <div class="dropdown">
-                                        <a asp-controller="Design" asp-action="Banners" class="dropdown-item" id="topnav-crypto">
-                                            <span key="t-forms">Banner Düzenleme</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a asp-controller="Design" asp-action="Temp" class="dropdown-item" id="topnav-crypto">
+                                <div class="dropdown-menu dropdown-mega-menu-sm" style="width:300px">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a asp-controller="Design" asp-action="Banners" class="dropdown-item" id="topnav-crypto"><span key="t-forms">Banner Düzenleme</span></a>
+                                                    <a asp-controller="Design" asp-action="Temp" class="dropdown-item" id="topnav-crypto"><span key="t-tables">Tema Rengi</span></a>
+                                                    <a asp-controller="ShowCase" asp-action="Index" class="dropdown-item" id="topnav-charts"><span key="t-charts">Vitrinler</span></a>
+                                                </div>
+                                                <div class="col-md-6">
 
-                                            <span key="t-tables">Tema Rengi</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a asp-controller="ShowCase" asp-action="Index" class="dropdown-item" id="topnav-charts">
-                                            <span key="t-charts">Vitrinler</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-icons">Sayfa Dizaynı</span>
-                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -509,38 +241,24 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bx bx-window mr-2"></i><span key="t-extra-pages">Ürün ve Kategoriler</span> <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-more">
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-invoice"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-invoices">Kategori Ekleme</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-authentication">Alt kategoriler</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-utility">Kategori Ayarları</span>
-                                        </a>
-                                    </div>
+                                <div class="dropdown-menu dropdown-mega-menu-sm" style="width:300px">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-authentication">Kategori Ekleme</span></a>
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-authentication">Alt kategoriler</span></a>
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-authentication">Kategori Ayarları</span></a>
 
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-utility">Ürün Ekleme</span>
-                                        </a>
-                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
 
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-utility">Tedarikçiler</span>
-                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -550,19 +268,22 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bx bx-money mr-2"></i><span key="t-layouts">Kampanya Yönetimi</span> <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-vertical">Kampanya Yönetimi</span>
-                                        </a>
-                                    </div>
+                                <div class="dropdown-menu dropdown-mega-menu-sm" style="width:300px">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-vertical">Kampanya Yönetimi</span></a>
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-authentication">Kampanya Oluştur</span></a>
+                                                </div>
+                                                <div class="col-md-6">
 
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-hori"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-horizontal">Kampanya Oluştur</span>
-                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -571,55 +292,24 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="bx bx-user mr-2"></i><span key="t-layouts">Üye Yönetimi</span> <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-vertical">Üye İşlemler</span>
-                                        </a>
-                                    </div>
+                                <div class="dropdown-menu dropdown-menu-right dropdown-mega-menu-sm" style="width:300px">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-vertical">Üye işlemleri</span></a>
+                                                    <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span key="t-authentication">Üye Hareketleri</span></a>
+                                                </div>
+                                                <div class="col-md-6">
 
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-hori"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-horizontal">Üye Hareketi</span>
-                                        </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="bx bx-file-blank mr-2"></i><span key="t-layouts">Entegrasyon</span> <div class="arrow-down"></div>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-layout">
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-verti"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-vertical">Kargo Entegrasyonu</span>
-                                        </a>
-                                    </div>
-
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-hori"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-horizontal">Pazar Yeri Entegrasyonu</span>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown">
-                                        <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-layout-hori"
-                                           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span key="t-horizontal">Ayarlar</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="bx bx-receipt mr-2"></i><span key="t-layouts">Faturalar</span> <div class="arrow-down"></div>
-                                </a>
                             </li>
 
                         </ul>

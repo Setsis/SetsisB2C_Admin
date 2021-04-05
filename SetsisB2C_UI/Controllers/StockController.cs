@@ -6,6 +6,7 @@ using SetsisB2C_UI.Models.Brands;
 using SetsisB2C_UI.Models.Hierarchy;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,10 +18,10 @@ namespace SetsisB2C_UI.Controllers
         public IActionResult ManageBrand()
         {   
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetBrands");
             value = apiConnect.StrResponse;
             var br = JsonConvert.DeserializeObject<List<Brands>>(value);
-            return View(br);
+            return View(br.ToList());
             
         }
         [HttpGet]
@@ -32,7 +33,7 @@ namespace SetsisB2C_UI.Controllers
         public IActionResult CreateBrands(string BrandName, string BrandCode, IFormFile BrandImgPath)
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2023/Stock/AddBrands?BrandName={BrandName}&BrandCode={BrandCode}&BrandImgPath={BrandImgPath}");
+            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2071/Stock/AddBrands?BrandName={BrandName}&BrandCode={BrandCode}&BrandImgPath={BrandImgPath}");
             value = apiConnect.StrResponse;
             var br = JsonConvert.DeserializeObject<object>(value);
             return RedirectToAction("ManageBrand");
@@ -41,24 +42,41 @@ namespace SetsisB2C_UI.Controllers
         public IActionResult _PartialBrandsUpdate()
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetBrands");
             value = apiConnect.StrResponse;
             var br = JsonConvert.DeserializeObject<List<Brands>>(value);
-            return View(br);
+            return View(br.FirstOrDefault());
         }
-        public IActionResult UpdateBrand(string? BrandName, string? BrandCode, IFormFile? BrandImgPath, Guid? BrandID)
+        [HttpPost]
+        public IActionResult UpdateBrand(BrandFile brandFile,string BrandImgPath,string BrandCode, string BrandName)
         {
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2023/Stock/UpdateBrands?BrandName={BrandName}&BrandCode={BrandCode}&BrandImgPath={BrandImgPath}&BrandID={BrandID}");
-            value = apiConnect.StrResponse;
-            var br = JsonConvert.DeserializeObject<object>(value);
-            return RedirectToAction("ManageBrand");
+            if (ModelState.IsValid)
+            {
+              
+                if (brandFile.brandImgPath != null)
+                {
+                    var ex = Path.GetExtension(brandFile.brandImgPath.FileName);
+                    var newImage = Guid.NewGuid() + ex;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image/" + newImage);
+                    var stream = new FileStream(path, FileMode.Create);
+
+                    BrandImgPath = newImage;
+                    BrandCode = brandFile.brandCode;
+                    BrandName = brandFile.brandName;
+                }
+                string value = "";
+                ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/UpdateBrands?BrandName=" + BrandName + "&BrandCode=" +BrandCode + "&BrandImgPath=" +BrandImgPath,"post");
+                value = apiConnect.StrResponse;
+                var br = JsonConvert.DeserializeObject<object>(value);
+                return RedirectToAction("ManageBrand", "Stock");
+            }
+            return View("MamageBrand");
         }
         [HttpGet]
         public IActionResult _PartialBrandsDelete()
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetBrands");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetBrands");
             value = apiConnect.StrResponse;
             var br = JsonConvert.DeserializeObject<List<Brands>>(value);
             return View(br);
@@ -67,7 +85,7 @@ namespace SetsisB2C_UI.Controllers
         public IActionResult DeleteBrand(Guid? BrandID)
         {
             string value = "";
-            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2023/Stock/DeleteBrands?BrandID={BrandID}");
+            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2071/Stock/DeleteBrands?BrandID={BrandID}");
             value = apiConnect.StrResponse;
             var br = JsonConvert.DeserializeObject<object>(value);
             return RedirectToAction("ManageBrand");
@@ -127,7 +145,7 @@ namespace SetsisB2C_UI.Controllers
         {
             Root rt;
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetHierarchy");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetHierarchy");
             value = apiConnect.StrResponse;
             rt = JsonConvert.DeserializeObject<Root>(value);
             return View(rt.Hierarchies.ToList());
@@ -144,7 +162,7 @@ namespace SetsisB2C_UI.Controllers
         {
             Root rt;
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetHierarchy");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetHierarchy");
             value = apiConnect.StrResponse;
             rt = JsonConvert.DeserializeObject<Root>(value);
             return View(rt.Hierarchies.ToList());

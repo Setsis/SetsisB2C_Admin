@@ -13,6 +13,7 @@
             @using (Html.BeginForm("DeleteBrand", "Stock", null, FormMethod.Post))
             {
                 <div class="modal-body">
+                    <input type="hidden" id="DeleteID" name="BrandID" class="form-control" />
                     <span id="SilinenMarka"></span> Markası Silinsin mi?
                 </div>
                 <div class="modal-footer">
