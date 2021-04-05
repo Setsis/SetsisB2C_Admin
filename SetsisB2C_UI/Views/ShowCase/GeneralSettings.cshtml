@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿@model IEnumerable<SetsisB2C_UI.Models.Product>
 
 
@@ -11,11 +12,26 @@
                     
                 </div>
                 
+=======
+﻿
+
+@model IEnumerable<Product>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box d-flex align-items-center justify-content-between">
+                <h4 class="mb-0 font-size-18">Genel Ayarlar</h4>
+>>>>>>> 4e48a0d9e911c40cb530477af629e05c963992a8
             </div>
         </div>
     </div>
 
     <div class="p-2">
+<<<<<<< HEAD
 
 
         <div class="row">
@@ -110,10 +126,91 @@
             </div>
             <div class="col-sm-2 col-md-6 col-lg-6 col-xl-6 mt-2 mt-sm-0">
                 <div class="form-check">
+=======
+        <form method="post" class="form-horizontal" asp-controller="ShowCase" asp-action="Index">
+
+            <div class="row">
+
+                <label for="example-text-input" class="col-md-2 col-form-label">Blog Tipi</label>
+                <div class="col-md-3">
+                    <div class="form-check ">
+                        <input class="form-check-input" id="icerik" type="radio" name="exampleRadios" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            İçerik
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+
+                    <input class="form-check-input" id="product" type="radio" name="exampleRadios" value="option1">
+
+                    <div class="form-check ">
+
+                        <label class="form-check-label" for="exampleRadios1">
+                            Ürün
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card" id="crd" style="display:none">
+                <div class="card-body">
+                    <input type="text" onkeyup="myFunction()" id="search" placeholder="Ürün Ara">
+                    <div class="table-responsive" id="show" style="display:block;">
+                        <table id="tblproduct" class="table" style="display:none;">
+                            <thead>
+                                <tr>
+                                    <th>Barcode</th>
+                                    <th>Ürün Adı</th>
+                                    <th>Açıklama</th>
+                                    <th>Renk</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var product in Model)
+                                    {
+
+                                        <tr style="height:40%;">
+                                            <td>@product.Barcode</td>
+                                            <td>@product.ItemCode</td>
+                                            <td>@product.ItemDescription</td>
+                                            <td>@product.ColorDescription</td>
+
+                                        </tr>
+                                    }
+                                }
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class=" row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Başlık</label>
+                <div class="col-md-5">
+                    <input class="form-control" type="text" id="example-text-input">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Başlık Göster</label>
+                <div class="form-check col-md-3 ml-3">
+>>>>>>> 4e48a0d9e911c40cb530477af629e05c963992a8
                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 
                 </div>
             </div>
+<<<<<<< HEAD
             
         </div>
         <div class="form-group row mt-4">
@@ -155,12 +252,48 @@
 
 @*@section Scripts
 {
+=======
+            <div class="form-group row">
+                <label for="example-text-input" class="col-md-2 col-form-label">Blog Tipi</label>
+                <div class="col-md-3">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Masaüstü ve Mobil
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Masaüstü
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="option1">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Mobil
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+</div>
+>>>>>>> 4e48a0d9e911c40cb530477af629e05c963992a8
 <script>
 
 
     document.getElementById("product").addEventListener("click", function () {
 
         var search = document.getElementById("crd");
+<<<<<<< HEAD
         if (search.style.display == "none") {
 
             search.style.display = "block";
@@ -173,3 +306,57 @@
 </script>
 }*@
 
+=======
+        var table = document.getElementById("tableproduct");
+
+        if (search.style.display == "none") {
+
+            search.style.display = "block";
+
+        }
+    });
+
+
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue, response;
+        input = document.getElementById("search");
+        response = document.getElementById("show");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("tblproduct");
+        tr = table.getElementsByTagName("tr");
+
+
+
+        if (input.value === "") {
+            response.style.display = "none"
+            console.log(input.value)
+        } else {
+            response.style.display = "block"
+        }
+
+        for (i = 0; i < tr.length; i++) {
+
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+
+                    tr[i].style.display = "";
+
+
+                } else {
+
+
+                    tr[i].style.display = "none";
+
+                }
+            }
+        }
+
+
+
+    }
+
+
+</script>
+>>>>>>> 4e48a0d9e911c40cb530477af629e05c963992a8
