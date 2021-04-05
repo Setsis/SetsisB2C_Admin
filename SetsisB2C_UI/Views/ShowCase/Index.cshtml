@@ -1,4 +1,5 @@
 ﻿
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,21 +10,24 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-sm-4 ">
+                    <div class="col-sm-12 col-md-4 col-lg-3  col-xl-4">
                         <select class="form-control">
                             <option>Ana Sayfa</option>
                             <option>Categoriler</option>
                             <option>Small select</option>
                         </select>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-success" type="button" id="inputGroupFileAddon03">Kaydet</button>
-                        </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3  col-xl-4 ">
+                            <button id="kaydet" class="btn btn-success mt-2 mt-md-0" type="button" >Kaydet</button>
                     </div>
-                    <div class="col-md-4 ">
 
-                    <partial name="../Shared/PartialView/PartialTabPage.cshtml" />
+                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4"> 
+                            <button type="button" class="btn btn-success mt-2 mt-md-0  float-sm-left float-md-left  float-lg-righ float-xl-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                Yeni Blok Ekle
+                            </button>
+                            <!-- Modal -->
+                            <partial name="PartialTabPage">
+                        
                     </div>
                 </div>
             </div>
@@ -36,16 +40,19 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-8" align="center">
+                    <div class="col-sm-6 col-md-8 col-lg-8 col-xl-8"align="center">
                         <h5>Blok Adı</h5>
                     </div>
 
-                    <div class="col-md-4 ">
-                        <div class="d-flex flex-row-reverse">
-                            <div class="p-2">  <i class="bx bx-trash-alt mr-2 bx-md "></i></div>
-                            <div class="p-2"> <i class="bx bx-edit mr-2 bx-md"></i></div>
-
-                        </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 ">
+                        <ul class="list-inline font-size-20 contact-links mb-0 float-sm-left float-md-left float-lg-right float-xl-right" >
+                            <li class="list-inline-item px-2">
+                                <a href="" data-toggle="tooltip" data-placement="top" title="DÜZENLE"><i class="mdi mdi-pencil font-size-16 text-success mr-1" ></i></a>
+                            </li>
+                            <li  class="list-inline-item px-2">
+                                <a  id="delete"   data-toggle="tooltip" data-placement="top" title="Sil"><i  class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -55,8 +62,96 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+@section Scripts{
+
+<script>
+
+    document.getElementById("kaydet").addEventListener("click", function () {
+
+        Command: toastr["success"]("Kayıt İşlemi Başarıyla Tamamlandı")
+
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 1000,
+            "timeOut": 5000,
+            "extendedTimeOut": 1000,
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+
+    })
+
+    document.getElementById("delete").addEventListener("click", function () {
+
+        Command: toastr["success"]("Silme İşlemi Başarıyla Tamamlandı")
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": 300,
+            "hideDuration": 1000,
+            "timeOut": 5000,
+            "extendedTimeOut": 1000,
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+
+
+    })
+
+    document.getElementById("product").addEventListener("click", function () {
+
+        var search = document.getElementById("crd");
+        if (search.style.display == "none") {
+
+            search.style.display = "block";
+        }
+
+
+    });
+   
+
+        $("#ekle").click(function() {
+            let item = $("#search").val();
+            $.ajax({
+                type: "Get",
+                dataType: "json",
+                cors: true,
+                contentType: "application/jsom",
+                secure: true,
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                },
+                url: "http://10.20.8.6:2071/Stock/GetItemDesc?ItemCode=" + item,
+                
+                success: function (data) {
+                    console.log(item);
+
+                }
+            });
+        })
+    
+</script>
+
+   
+}
 
 
