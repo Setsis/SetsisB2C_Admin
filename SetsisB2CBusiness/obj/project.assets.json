@@ -1,41 +1,11 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "jQuery/3.6.0": {
-        "type": "package"
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "jQuery/3.6.0": {
-      "sha512": "sSzCTDWn15waSMjDrP21jjgG1j1pwISLaKiVCClwU4XGAmuZt+FScLkdyRvh9ppoIxAW/tJtJBYei+3CAwFQ7g==",
-      "type": "package",
-      "path": "jquery/3.6.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Scripts/jquery-3.6.0-vsdoc.js",
-        "Content/Scripts/jquery-3.6.0.js",
-        "Content/Scripts/jquery-3.6.0.min.js",
-        "Content/Scripts/jquery-3.6.0.min.map",
-        "Content/Scripts/jquery-3.6.0.slim.js",
-        "Content/Scripts/jquery-3.6.0.slim.min.js",
-        "Content/Scripts/jquery-3.6.0.slim.min.map",
-        "Tools/common.ps1",
-        "Tools/install.ps1",
-        "Tools/jquery-3.6.0.intellisense.js",
-        "Tools/uninstall.ps1",
-        "jquery.3.6.0.nupkg.sha512",
-        "jquery.nuspec"
-      ]
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "jQuery >= 3.6.0"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
     "C:\\Users\\emirh\\.nuget\\packages\\": {},
@@ -45,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+      "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
       "projectName": "SetsisB2C_Business",
-      "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+      "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
       "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
+      "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -84,12 +54,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
-        "dependencies": {
-          "jQuery": {
-            "target": "Package",
-            "version": "[3.6.0, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -114,7 +78,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

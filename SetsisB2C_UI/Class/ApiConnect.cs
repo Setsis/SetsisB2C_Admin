@@ -90,14 +90,20 @@ namespace SetsisB2B.Class
         public string makeRequest()
         {
             string strResponseValue = string.Empty;
-
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(endPoint);
-
-            request.Method = httpMethod.ToString();
-
+            request.Method = "GET";
+            request.ServicePoint.Expect100Continue = false;
+            request.ProtocolVersion = HttpVersion.Version11;
+            request.KeepAlive = true;
+            request.AllowAutoRedirect = false;
+            request.ContentType = "application/json; charset=utf-8";
+            request.CachePolicy = new System.Net.Cache.RequestCachePolicy(System.Net.Cache.RequestCacheLevel.NoCacheNoStore);
+            request.CookieContainer = new CookieContainer();
+            request.UserAgent = "Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.3) Gecko/20070309 Firefox/2.0.0.3";
+            request.Headers.Add("Keep-Alive", "300");
+            request.Timeout = 15000;
+            request.Pipelined = false;
             String authHeaer = System.Convert.ToBase64String(System.Text.ASCIIEncoding.ASCII.GetBytes(userName + ":" + userPassword));
-            request.Headers.Add("Authorization", authType.ToString() + " " + authHeaer);
-
             HttpWebResponse response = null;
 
             try

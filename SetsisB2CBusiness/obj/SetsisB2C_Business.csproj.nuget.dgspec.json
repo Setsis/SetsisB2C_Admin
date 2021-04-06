@@ -1,40 +1,33 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {}
+    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {
+    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+        "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
         "projectName": "SetsisB2C_Business",
-        "projectPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-        "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinan\\Desktop\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
-=======
-    "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-        "projectName": "SetsisB2C_Business",
-        "projectPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-        "packagesPath": "C:\\Users\\Sinan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sinan\\Documents\\GitHub\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
->>>>>>> Stashed changes
+        "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+        "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
+        "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\emirh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -53,12 +46,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "jQuery": {
-              "target": "Package",
-              "version": "[3.6.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -74,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

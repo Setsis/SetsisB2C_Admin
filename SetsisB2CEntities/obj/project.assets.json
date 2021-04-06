@@ -11,9 +11,6 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
-      "jQuery/3.6.0": {
-        "type": "package"
-      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -1528,8 +1525,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.4",
-          "jQuery": "3.6.0"
+          "Microsoft.EntityFrameworkCore": "5.0.4"
         },
         "compile": {
           "bin/placeholder/SetsisB2C_Core.dll": {}
@@ -1555,29 +1551,6 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
-      ]
-    },
-    "jQuery/3.6.0": {
-      "sha512": "sSzCTDWn15waSMjDrP21jjgG1j1pwISLaKiVCClwU4XGAmuZt+FScLkdyRvh9ppoIxAW/tJtJBYei+3CAwFQ7g==",
-      "type": "package",
-      "path": "jquery/3.6.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/Scripts/jquery-3.6.0-vsdoc.js",
-        "Content/Scripts/jquery-3.6.0.js",
-        "Content/Scripts/jquery-3.6.0.min.js",
-        "Content/Scripts/jquery-3.6.0.min.map",
-        "Content/Scripts/jquery-3.6.0.slim.js",
-        "Content/Scripts/jquery-3.6.0.slim.min.js",
-        "Content/Scripts/jquery-3.6.0.slim.min.map",
-        "Tools/common.ps1",
-        "Tools/install.ps1",
-        "Tools/jquery-3.6.0.intellisense.js",
-        "Tools/uninstall.ps1",
-        "jquery.3.6.0.nupkg.sha512",
-        "jquery.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -5836,8 +5809,7 @@
       "Microsoft.EntityFrameworkCore >= 5.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
-      "SetsisB2C_Core >= 1.0.0",
-      "jQuery >= 3.6.0"
+      "SetsisB2C_Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5848,11 +5820,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
+      "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
       "projectName": "SetsisB2C_Entities",
-      "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
+      "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
       "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\",
+      "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -5876,8 +5848,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
-              "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
+            "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+              "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
             }
           }
         }
@@ -5905,10 +5877,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.4, )"
-          },
-          "jQuery": {
-            "target": "Package",
-            "version": "[3.6.0, )"
           }
         },
         "imports": [
@@ -5935,7 +5903,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

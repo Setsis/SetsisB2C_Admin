@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "WiugG8pzfr1vjDAg/zHrKTa6i2fpHHsmlM96ncMrJh9kA+FldG8SNezYnX5pBFFCV7RX1CygR4x3PipyXXGd2g==",
+  "dgSpecHash": "8qbuCndM28U7L9sMtPPZtF+Uebn2FeLZkuNuIT+NIi4ASRbGAz4G2p/FOUUGxYux4MyqYMb3G0RvoBZwqAjSZQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+  "projectFilePath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\emirh\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.4\\microsoft.entityframeworkcore.5.0.4.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.4\\microsoft.entityframeworkcore.abstractions.5.0.4.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.4\\microsoft.entityframeworkcore.analyzers.5.0.4.nupkg.sha512",
@@ -25,7 +24,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {}
+    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {
+    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+        "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
         "projectName": "SetsisB2C_UI",
-        "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
+        "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2C_UI\\SetsisB2C_UI.csproj",
         "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
+        "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2C_UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[5.0.4, )"
             },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.4, )"
@@ -58,10 +62,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
-            },
-            "jQuery": {
-              "target": "Package",
-              "version": "[3.6.0, )"
             }
           },
           "imports": [

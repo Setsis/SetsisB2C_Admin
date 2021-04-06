@@ -9,8 +9,4 @@
     <Folder Include="Concrete\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="jQuery" Version="3.6.0" />
-  </ItemGroup>
-
 </Project>

@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.deps.json
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.runtimeconfig.json
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.runtimeconfig.dev.json
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.dll
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.pdb
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_Core.dll
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_Core.pdb
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.csprojAssemblyReference.cache
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.AssemblyInfoInputs.cache
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.AssemblyInfo.cs
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.csproj.CoreCompileInputs.cache
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.csproj.CopyComplete
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.dll
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.pdb
+E:\Projeler\Serkan\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.genruntimeconfig.cache
+=======
 C:\Users\PC\source\repos\SetsisB2C\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.deps.json
 C:\Users\PC\source\repos\SetsisB2C\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.dll
 C:\Users\PC\source\repos\SetsisB2C\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.pdb
@@ -31,3 +48,19 @@ C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.dll
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.pdb
 C:\Users\PC\Desktop\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.genruntimeconfig.cache
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.deps.json
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.runtimeconfig.json
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.runtimeconfig.dev.json
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.dll
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_DataAccess.pdb
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_Core.dll
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\bin\Debug\netcoreapp3.1\SetsisB2C_Core.pdb
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.csprojAssemblyReference.cache
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.AssemblyInfoInputs.cache
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.AssemblyInfo.cs
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.csproj.CoreCompileInputs.cache
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.csproj.CopyComplete
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.dll
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.pdb
+E:\SetsisB2C_Admin\SetsisB2CDataAccess\obj\Debug\netcoreapp3.1\SetsisB2C_DataAccess.genruntimeconfig.cache
+>>>>>>> c6723686295671da63160cf824ef8aa9c6526e09

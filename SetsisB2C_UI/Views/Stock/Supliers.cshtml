@@ -10,7 +10,7 @@
                     <div class="col-sm-4">
                         <div class="search-box mr-2 mb-2 d-inline-block">
                             <div class="position-relative">
-                                <input type="search" class="form-control" id="myInput" onkeyup="searchFunction()" placeholder="Tedarikçi Adı Giriniz..">
+                                <input type="text" class="form-control" placeholder="Ara...">
                                 <i class="bx bx-search-alt search-icon"></i>
                             </div>
                         </div>
@@ -23,7 +23,7 @@
                     <!-- end col-->
                 </div>
                 <div class="table-responsive">
-                    <table id="myTable" class="table table-centered table-nowrap">
+                    <table class="table table-centered table-nowrap">
                         <thead class="thead-light">
                             <tr>
                                 <th style="width: 20px;">
@@ -49,18 +49,12 @@
                                         <label class="custom-control-label" for="customCheck3">&nbsp;</label>
                                     </div>
                                 </td>
-                                @*Tedarikçi Adı*@
-                                <td>Setsis</td>
-                                @*Yetkili Kişi*@
-                                <td>Sinan Ramazan KABİL</td>
-                                @*Telefon*@
-                                <td>0544 812 00 77</td>
-                                @*Mail*@
-                                <td>sinan.kabil@setsis.com.tr</td>
-                                @*Adres*@
-                                <td>Şişli/İstanbul</td>
-                                @*Detaylar*@
-                                <td>
+                                @*Tedarikçi Adı*@<td>Setsis</td>
+                                @*Yetkili Kişi*@<td>Sinan Ramazan KABİL</td>
+                                @*Telefon*@<td>0544 812 00 77</td>
+                                @*Mail*@<td>sinan.kabil@setsis.com.tr</td>
+                                @*Adres*@<td>Şişli/İstanbul</td>                              
+                                @*Detaylar*@<td>
                                     <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
                                         View Details
                                     </button>
@@ -70,62 +64,7 @@
                                     <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#SupliersDelete"><i class="mdi mdi-close font-size-18"></i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class="custom-control-label" for="customCheck3">&nbsp;</label>
-                                    </div>
-                                </td>
-                                @*Tedarikçi Adı*@
-                                <td>Duyduy</td>
-                                @*Yetkili Kişi*@
-                                <td>Sinan Ramazan Kabil</td>
-                                @*Telefon*@
-                                <td>0544 812 00 77</td>
-                                @*Mail*@
-                                <td>sinan.kabil@setsis.com.tr</td>
-                                @*Adres*@
-                                <td>Şişli/İstanbul</td>
-                                @*Detaylar*@
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
-                                        View Details
-                                    </button>
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#SupliersDelete"><i class="mdi mdi-close font-size-18"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                        <label class="custom-control-label" for="customCheck3">&nbsp;</label>
-                                    </div>
-                                </td>
-                                @*Tedarikçi Adı*@
-                                <td>LamiaFeris</td>
-                                @*Yetkili Kişi*@
-                                <td>Sinan Ramazan Kabil</td>
-                                @*Telefon*@
-                                <td>0544 812 00 77</td>
-                                @*Mail*@
-                                <td>sinan.kabil@setsis.com.tr</td>
-                                @*Adres*@
-                                <td>Şişli/İstanbul</td>
-                                @*Detaylar*@
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-sm btn-rounded" data-toggle="modal" data-target=".exampleModal">
-                                        View Details
-                                    </button>
-                                </td>
-                                <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#SupliersUpdate"><i class="mdi mdi-pencil font-size-18"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#SupliersDelete"><i class="mdi mdi-close font-size-18"></i></a>
-                                </td>
-                            </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -150,30 +89,6 @@
         </div>
     </div>
 </div>
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialSupliersAdd.cshtml")
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialSupliersUpdate.cshtml")
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialSupliersDelete.cshtml")
-<script>
-    function searchFunction() {
-
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        console.log(input);
-        filter = input.value.toUpperCase();
-        console.log(filter);
-        table = document.getElementById("myTable");
-        console.log(table);
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[1];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
+@await Html.PartialAsync("_PartialSupliersAdd")
+@await Html.PartialAsync("_PartialSupliersUpdate")
+@await Html.PartialAsync("_PartialSupliersDelete")

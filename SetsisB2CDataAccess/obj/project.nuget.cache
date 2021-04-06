@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "H6LDKeBY+epeDTi32tqYzAd5Z8nlpopQC9kCpOimheQoEkkwbSdzPgUxLF0FgI5GG3wv1aXHdZcDXIZE7Lf3CA==",
+  "dgSpecHash": "p9HTnIsF3mjNb5pdA1jPQZgf1DLC0UKTLIPHufL5PjdTV0qJd9zVmzeMnamnhS3UnpJ2hBNVZ72XtnIc0Mm9eQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+  "projectFilePath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emirh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\emirh\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.4\\microsoft.aspnetcore.cryptography.keyderivation.5.0.4.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.4\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.4.nupkg.sha512",
@@ -113,7 +112,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

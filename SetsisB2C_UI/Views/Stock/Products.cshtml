@@ -10,21 +10,21 @@
                     <div class="col-sm-4">
                         <div class="search-box mr-2 mb-2 d-inline-block">
                             <div class="position-relative">
-                                <input type="search" class="form-control" id="myInput" onkeyup="searchFunction()" placeholder="Barkod No Giriniz..">
+                                <input type="text" class="form-control" placeholder="Ara...">
                                 <i class="bx bx-search-alt search-icon"></i>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="text-sm-right">
-                            <a asp-action="ProductsAdd" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-plus mr-1"></i>Yeni Ürün Ekle</></a>
-                            <button type="button" id="ExcelButton" class="btn btn-primary btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-download"></i> Excel Olarak İndir</button>
+                            <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2" data-toggle="modal" data-target="#ValuesAdd"><i class="mdi mdi-plus mr-1"></i>Yeni Ürün Ekle</button>
+                            <button type="button" class="btn btn-primary btn-rounded waves-effect waves-light mb-2 mr-2" data-toggle="modal" data-target="#ValuesAdd"><i class="mdi mdi-download"></i> Excel Olarak İndir</button>
                         </div>
                     </div>
                     <!-- end col-->
                 </div>
                 <div class="table-responsive">
-                    <table id="myTable" class="table table-centered table-nowrap">
+                    <table id="DowlandTable" class="table table-centered table-nowrap">
                         <thead class="thead-light">
                             <tr>
                                 <th style="width:40px">ID</th>
@@ -45,35 +45,10 @@
                                     <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#EditPrice"><i class="bx bx-money" title="Fiyat Düzenle"></i></a>
                                     <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="bx bx-show-alt" title="Aktif"></i></a>
                                     <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsUpdate"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ProductsDelete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
+                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ValuesDelete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>96851232</td>
-                                <td>seva 3'lü Koltuk</td>
-                                <td>Oturma Odası / Köşe Takımı</td>
-                                <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsPhotos"><i class="far fa-image" title="Fotoğrafları Görüntüle"></i></a>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#EditPrice"><i class="bx bx-money" title="Fiyat Düzenle"></i></a>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="bx bx-show-alt" title="Aktif"></i></a>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsUpdate"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ProductsDelete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>5498651</td>
-                                <td>ceva 3'lü Koltuk</td>
-                                <td>Yatak Odası / Baza</td>
-                                <td>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsPhotos"><i class="far fa-image" title="Fotoğrafları Görüntüle"></i></a>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#EditPrice"><i class="bx bx-money" title="Fiyat Düzenle"></i></a>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit"><i class="bx bx-show-alt" title="Aktif"></i></a>
-                                    <a href="javascript:void(0);" class="mr-3 text-primary" data-placement="top" title="" data-original-title="Edit" data-toggle="modal" data-target="#ProductsUpdate"><i class="mdi mdi-pencil font-size-18" title="Güncelle"></i></a>
-                                    <a href="javascript:void(0);" class="text-danger" data-placement="top" title="" data-original-title="Delete" data-toggle="modal" data-target="#ProductsDelete"><i class="mdi mdi-close font-size-18" title="Sil"></i></a>
-                                </td>
-                            </tr>
+
 
                         </tbody>
                     </table>
@@ -99,32 +74,9 @@
         </div>
     </div>
 </div>
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductPhotos.cshtml")
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductsDelete.cshtml")
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductsUpdate.cshtml")
-@await Html.PartialAsync("~/Views/Stock/PartialView/_PartialProductEditPrice.cshtml")
-
-<script>
-    function searchFunction() {
-
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        console.log(input);
-        filter = input.value.toUpperCase();
-        console.log(filter);
-        table = document.getElementById("myTable");
-        console.log(table);
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[1];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
-</script>
+@await Html.PartialAsync("_PartialProductPhotos")
+@await Html.PartialAsync("_PartialProductEditPrice")
+@await Html.PartialAsync("_PartialProductsUpdate")
+@*@await Html.PartialAsync("_PartialValuesAdd")
+    @await Html.PartialAsync("_PartialValuesUpdate")
+    @await Html.PartialAsync("_PartialValuesDelete")*@

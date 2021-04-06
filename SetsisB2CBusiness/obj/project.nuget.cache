@@ -1,17 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "LX2c9vEE63SI/Zq6RX8oN9mVlgYKg33ZTgAJZJ/qUY7jRD5NOvg6zUV2L2gOnfvigWT31d1WkfzSEksXBPUdrQ==",
+  "dgSpecHash": "1WXZ4FUV0MjY7BqjyoMvCk/QsLTuSAVRP49L5VwWt50bdWFmmFwrJ7zoQhjxqQdJz3wIO8QVXOuFdm+VwPR7KQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\emirh\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512"
-  ],
+  "projectFilePath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+  "expectedPackageFiles": [],
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

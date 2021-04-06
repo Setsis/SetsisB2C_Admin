@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "htyutpS3idgQZtY/4mBGTa5DblLVjlu0xp58/1uuii+jQjYM+YsVwvVo5dvqukIHOsYf1vNKkO2PZZgYp14New==",
+  "dgSpecHash": "hGJ3nH9WKkW6xtCtZ8ytRHcHzbd2u1sJDhyPlICnzHUmd7SruoDs8818O4Nb8psfAvgq/gQP9wvxbIdT9s3CWg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
+  "projectFilePath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emirh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\emirh\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -108,7 +107,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
