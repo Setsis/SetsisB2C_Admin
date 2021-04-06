@@ -445,19 +445,25 @@
                                     <span key="t-ui-elements">Siparişler</span>
                                     <div class="arrow-down"></div>
                                 </a>
-                                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-sm"
-                                     aria-labelledby="topnav-uielement">
+                                <div class="dropdown-menu dropdown-mega-menu-sm" style="width:300px">
                                     <div class="row">
-                                        <div class="col-lg-2">
-                                            <div>
-                                                <a asp-controller="Order" asp-action="AllOrder" class="dropdown-item" key="t-alerts">Tüm Siparişler</a>
-                                                <a asp-controller="Order" asp-action="ReturnOrder" class="dropdown-item" key="t-buttons">İade Edilenler</a>
-                                                <a asp-controller="Order" asp-action="SlipsOrder" class="dropdown-item" key="t-cards">Etiket Yazdır</a>
-                                                <a asp-controller="Order" asp-action="BillsOrder" class="dropdown-item" key="t-carousel">İrsalyeler</a>
+                                        <div class="col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a asp-controller="Order" asp-action="AllOrder" class="dropdown-item" key="t-alerts">Tüm Siparişler</a>
+                                                    <a asp-controller="Order" asp-action="ReturnOrder" class="dropdown-item" key="t-buttons">İade Edilenler</a>
+                                                    <a asp-controller="Order" asp-action="SlipsOrder" class="dropdown-item" key="t-cards">Etiket Yazdır</a>
+                                                    <a asp-controller="Order" asp-action="BillsOrder" class="dropdown-item" key="t-carousel">İrsalyeler</a>
+                                                </div>
+                                                <div class="col-md-6">
+
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                            <img src="~/HTML/Admin/dist/assets/images/brands/menu.png" width="100" height="100" />
+                                        </div>
                                     </div>
-
                                 </div>
                             </li>
 
@@ -690,7 +696,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-right d-none d-sm-block">
-                                Design & Develop by Themesbrand
+                                Setsis tarafından geliştirilmiştir
                             </div>
                         </div>
                     </div>

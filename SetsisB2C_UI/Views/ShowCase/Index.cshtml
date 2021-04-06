@@ -17,22 +17,14 @@
                             <option>Small select</option>
                         </select>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-3  col-xl-4 ">
-                            <button id="kaydet" class="btn btn-success mt-2 mt-md-0" type="button" >Kaydet</button>
+                    <div class="col-sm-4">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-success" type="button" id="inputGroupFileAddon03">Kaydet</button>
+                        </div>
                     </div>
-<<<<<<< HEAD
-
-                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4"> 
-                            <button type="button" class="btn btn-success mt-2 mt-md-0  float-sm-left float-md-left  float-lg-righ float-xl-right" data-toggle="modal" data-target=".bd-example-modal-lg">
-                                Yeni Blok Ekle
-                            </button>
-                            <!-- Modal -->
-                            <partial name="PartialTabPage">
-                        
-=======
                     <div class="col-md-4 ">
-                        <partial name="PartialTabPage" >
->>>>>>> 4e48a0d9e911c40cb530477af629e05c963992a8
+
+                    <partial name="../Shared/PartialView/PartialTabPage.cshtml" />
                     </div>
                 </div>
             </div>
@@ -130,33 +122,8 @@
             search.style.display = "block";
         }
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    });
-   
-
-        $("#ekle").click(function() {
-            let item = $("#search").val();
-            $.ajax({
-                type: "Get",
-                dataType: "json",
-                cors: true,
-                contentType: "application/jsom",
-                secure: true,
-                headers: {
-                    'Access-Control-Allow-Origin': '*',
-                },
-                url: "http://10.20.8.6:2071/Stock/GetItemDesc?ItemCode=" + item,
-                
-                success: function (data) {
-                    console.log(item);
-
-                }
-            });
-        })
-    
-</script>
-
-   
-}
 
 
