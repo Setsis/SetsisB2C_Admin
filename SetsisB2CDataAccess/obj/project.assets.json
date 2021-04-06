@@ -5976,11 +5976,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+      "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
       "projectName": "SetsisB2C_DataAccess",
-      "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
+      "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CDataAccess\\SetsisB2C_DataAccess.csproj",
       "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-      "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\",
+      "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6004,8 +6004,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
-              "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
+            "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+              "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
             }
           }
         }
@@ -6053,13 +6053,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CDataAccess\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

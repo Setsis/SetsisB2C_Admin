@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hGJ3nH9WKkW6xtCtZ8ytRHcHzbd2u1sJDhyPlICnzHUmd7SruoDs8818O4Nb8psfAvgq/gQP9wvxbIdT9s3CWg==",
+  "dgSpecHash": "TPVlbVpBM7WLA6t+vtey+9uwTYDMOKtTzPA9XaRIvQMiwpS2/zjQm4hfwYXUJqaZ366MHqWOIMoEXGaej1bjJw==",
   "success": true,
-  "projectFilePath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
+  "projectFilePath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emirh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -102,12 +102,5 @@
     "C:\\Users\\emirh\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
