@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {}
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {}
   },
   "projects": {
-    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+        "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
         "projectName": "SetsisB2C_Business",
-        "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+        "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
         "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
+        "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

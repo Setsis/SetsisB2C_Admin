@@ -20,7 +20,7 @@ namespace SetsisB2C_UI.Controllers
         {
             _webHostEnvironment = webHostEnvironment;
         }
-
+        
         public IActionResult Index()
         {
             return View();
@@ -31,10 +31,10 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
 
-
+      
 
         [HttpPost]
-        public IActionResult Slider(SliderFile sliderFile, string name, string description, string imageLink, int orders, string imageName)
+        public IActionResult Slider (SliderFile sliderFile,string name,string description, string imageLink,int orders,string imageName)
         {
             string value = "";
             //value = apiConnect.StrResponse;
@@ -45,28 +45,28 @@ namespace SetsisB2C_UI.Controllers
 
                 if (sliderFile.ImageName != null)
 
+            if (ModelState.IsValid)
+            {
+              
+                if (sliderFile.ImageName !=null)
+                {
+                    var ex = Path.GetExtension(sliderFile.ImageName.FileName);
+                    var newImage = Guid.NewGuid() + ex;
+                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image/" + newImage);
+                    var stream = new FileStream(path, FileMode.Create);
 
-                    if (ModelState.IsValid)
-                    {
+                    imageName = newImage;
+                    description = sliderFile.Description;
+                    imageLink = sliderFile.ImageLink;
+                    name = sliderFile.Name;
+                    orders = sliderFile.Orders;
 
-                        if (sliderFile.ImageName != null)
-                        {
-                            var ex = Path.GetExtension(sliderFile.ImageName.FileName);
-                            var newImage = Guid.NewGuid() + ex;
-                            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image/" + newImage);
-                            var stream = new FileStream(path, FileMode.Create);
+                }
+                   
+                }
 
-                            imageName = newImage;
-                            description = sliderFile.Description;
-                            imageLink = sliderFile.ImageLink;
-                            name = sliderFile.Name;
-                            orders = sliderFile.Orders;
-
-                        }
-                    }
-
-
-                ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Home/AddSlider?name=" + name + "&description=" + description + "&imageName=" + imageName + "&imageLink=" + imageLink + "&orders=" + orders);
+          
+                ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Home/AddSlider?name="+name+"&description="+description+"&imageName="+imageName+"&imageLink="+imageLink+ "&orders=" + orders);
                 return RedirectToAction("Index", "Home");
             }
             return View();
