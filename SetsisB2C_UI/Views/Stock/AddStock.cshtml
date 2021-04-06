@@ -1,0 +1,201 @@
+﻿
+@{
+    ViewData["Title"] = "AddStock";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+            <!-- start page title -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="page-title-box d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0 font-size-18">Ürün Ekle</h4>
+
+                        <div class="page-title-right">
+                            <ol class="breadcrumb m-0">
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Stok</a></li>
+                                <li class="breadcrumb-item active">Stok Ekle</li>
+                            </ol>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end page title -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h4 class="card-title">Ürün Bilgileri</h4>
+                            <p class="card-title-desc">Aşağıdaki bilgileri doldurun</p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+
+                                        <div class="form-group">
+                                            <label for="productname">Ürün Adı</label>
+                                            <input id="productname" name="productname" type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="manufacturername">Üretici Adı</label>
+                                            <input id="manufacturername" name="manufacturername" type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Üretici Marka</label>
+                                            <select class="form-control select2">
+                                                <option>Seç</option>
+
+                                            </select>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="productBarcode">Ürün Barkodu</label>
+                                                    <input id="productBarcode" name="productBarcode" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="stockCode">Stok Kodu</label>
+                                                    <input id="stockCode" name="stockCode" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="productColor">Ürün Rengi</label>
+                                                    <input id="productColor" name="productColor" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="productSize">Ürün Bedeni</label>
+                                                    <input id="productSize" name="productSize" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="productVariant">Ürün Varyantı</label>
+                                                    <input id="productVariant" name="productVariant" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="price">Fiyat</label>
+                                                    <input id="price" name="price" type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Kategori</label>
+                                            <select class="form-control select2">
+                                                <option>Seç</option>
+                                                <option value="AK">Kategori1</option>
+                                                <option value="HI">Kategori2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label">Özellikler</label>
+
+                                            <select class="select2 form-control select2-multiple" multiple="multiple" data-placeholder="Seçin ...">
+                                                <option value="AK">Özellik1</option>
+                                                <option value="HI">Özellik2</option>
+                                                <option value="CA">Özellik3</option>
+                                                <option value="NV">Özellik4</option>
+                                                <option value="OR">Özellik5</option>
+                                                <option value="WA">Özellik6</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="productdesc">Ürün Detayları</label>
+                                            <textarea class="form-control" id="productdesc" rows="5"></textarea>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mr-1 waves-effect waves-light">Kaydet</button>
+                                <button type="submit" class="btn btn-secondary waves-effect">İptal</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Ürün Fotoğrafları</h4>
+
+                            <form action="/" method="post" class="dropzone">
+                                <div class="fallback">
+                                    <input name="file" type="file" multiple />
+                                </div>
+
+                                <div class="dz-message needsclick">
+                                    <div class="mb-3">
+                                        <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                    </div>
+
+                                    <h4>Dosyaları yüklemek için sürükleyin veya tıklayın.</h4>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div> <!-- end card-->
+
+
+                    <div class="card">
+                        <div class="card-body">
+
+                            <h4 class="card-title">Anahtar Kelimeler</h4>
+                            <p class="card-title-desc">Aşağıdaki bilgileri doldurun</p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="metatitle">Başlıklar</label>
+                                            <input id="metatitle" name="productname" type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="metakeywords">Anahtar Kelimeler</label>
+                                            <input id="metakeywords" name="manufacturername" type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="metadescription">Açıklama</label>
+                                            <textarea class="form-control" id="metadescription" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mr-1 waves-effect waves-light">Kaydet</button>
+                                <button type="submit" class="btn btn-secondary waves-effect">İptal Et</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+      
+

@@ -1,12 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using SetsisB2B.Class;
-using SetsisB2C_UI.Models.Brands;
 using SetsisB2C_UI.Models.Hierarchy;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -14,84 +11,45 @@ namespace SetsisB2C_UI.Controllers
 {
     public class StockController : Controller
     {
-        //Marka Yönetimi Controller Başlangıcı
-        public IActionResult ManageBrand()
-        {   
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetBrands");
-            value = apiConnect.StrResponse;
-            var br = JsonConvert.DeserializeObject<List<Brands>>(value);
-            return View(br.ToList());
-            
+        public IActionResult GetStock()
+        {
+            return View();
         }
-        [HttpGet]
+        public IActionResult AddStock()
+        {
+            return View();
+        }
+        public IActionResult RequestStock()
+        {
+            return View();
+        }
+        public IActionResult ProductStocked()
+        {
+            return View();
+        }
+        public IActionResult ProductStockless()
+        {
+            return View();
+        }
+        //Marka Yönetimi Controller Başlangıcı
+        public IActionResult Brands()
+        {
+            return View();
+        }
         public IActionResult _PartialBrandsAdd()
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult CreateBrands(string BrandName, string BrandCode, IFormFile BrandImgPath)
-        {
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2071/Stock/AddBrands?BrandName={BrandName}&BrandCode={BrandCode}&BrandImgPath={BrandImgPath}");
-            value = apiConnect.StrResponse;
-            var br = JsonConvert.DeserializeObject<object>(value);
-            return RedirectToAction("ManageBrand");
-        }
-        [HttpGet]
         public IActionResult _PartialBrandsUpdate()
         {
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetBrands");
-            value = apiConnect.StrResponse;
-            var br = JsonConvert.DeserializeObject<List<Brands>>(value);
-            return View(br.FirstOrDefault());
+            return View();
         }
-        [HttpPost]
-        public IActionResult UpdateBrand(BrandFile brandFile,string BrandImgPath,string BrandCode, string BrandName)
-        {
-            if (ModelState.IsValid)
-            {
-              
-                if (brandFile.brandImgPath != null)
-                {
-                    var ex = Path.GetExtension(brandFile.brandImgPath.FileName);
-                    var newImage = Guid.NewGuid() + ex;
-                    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/Image/" + newImage);
-                    var stream = new FileStream(path, FileMode.Create);
-
-                    BrandImgPath = newImage;
-                    BrandCode = brandFile.brandCode;
-                    BrandName = brandFile.brandName;
-                }
-                string value = "";
-                ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/UpdateBrands?BrandName=" + BrandName + "&BrandCode=" +BrandCode + "&BrandImgPath=" +BrandImgPath,"post");
-                value = apiConnect.StrResponse;
-                var br = JsonConvert.DeserializeObject<object>(value);
-                return RedirectToAction("ManageBrand", "Stock");
-            }
-            return View("MamageBrand");
-        }
-        [HttpGet]
         public IActionResult _PartialBrandsDelete()
         {
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetBrands");
-            value = apiConnect.StrResponse;
-            var br = JsonConvert.DeserializeObject<List<Brands>>(value);
-            return View(br);
-        }
-        [HttpPost]
-        public IActionResult DeleteBrand(Guid? BrandID)
-        {
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect($"http://10.20.8.6:2071/Stock/DeleteBrands?BrandID={BrandID}");
-            value = apiConnect.StrResponse;
-            var br = JsonConvert.DeserializeObject<object>(value);
-            return RedirectToAction("ManageBrand");
+            return View();
         }
         //Tedarikçi Yönetimi Başlangıcı
-        public IActionResult ManageSuplier()
+        public IActionResult Supliers()
         {
             return View();
         }
@@ -108,7 +66,7 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
         //Özellik Yönetimi Controller Başlangıcı
-        public IActionResult ManageProperty()
+        public IActionResult Properties()
         {
             return View();
         }
@@ -141,11 +99,11 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
         //Kategori Yönetimi Controller Başlangıcı
-        public IActionResult ManageCategory()
+        public IActionResult MainMenu()
         {
             Root rt;
             string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetHierarchy");
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2023/Stock/GetHierarchy");
             value = apiConnect.StrResponse;
             rt = JsonConvert.DeserializeObject<Root>(value);
             return View(rt.Hierarchies.ToList());
@@ -160,15 +118,10 @@ namespace SetsisB2C_UI.Controllers
         }
         public IActionResult _PartialCategoryAdd()
         {
-            Root rt;
-            string value = "";
-            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Stock/GetHierarchy");
-            value = apiConnect.StrResponse;
-            rt = JsonConvert.DeserializeObject<Root>(value);
-            return View(rt.Hierarchies.ToList());
+            return View();
         }
         //Ürün Yönetimi Controller Başlangıcı
-        public IActionResult ManageProduct()
+        public IActionResult Products()
         {
             return View();
         }
@@ -181,30 +134,6 @@ namespace SetsisB2C_UI.Controllers
             return View();
         }
         public IActionResult _PartialProductsUpdate()
-        {
-            return View();
-        }
-        public IActionResult _PartialProductsDelete()
-        {
-            return View();
-        }
-        public IActionResult ProductsAdd()
-        {
-            return View();
-        }
-        public IActionResult _PartialProductsAdd01()
-        {
-            return View();
-        }
-        public IActionResult _PartialProductsAdd02()
-        {
-            return View();
-        }
-        public IActionResult _PartialProductsAdd03()
-        {
-            return View();
-        }
-        public IActionResult _PartialProductsAdd04()
         {
             return View();
         }

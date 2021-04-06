@@ -28,10 +28,8 @@ namespace SetsisB2C_UI
         public void ConfigureServices(IServiceCollection services)
         {
            
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation(); ;
             services.AddMvc();
-         
-
 
         }
 
@@ -46,15 +44,15 @@ namespace SetsisB2C_UI
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-            app.UseStaticFiles();
 
+            app.UseStaticFiles();
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
-           
 
 
+         
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
