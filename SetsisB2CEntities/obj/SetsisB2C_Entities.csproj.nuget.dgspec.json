@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj": {}
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj": {}
   },
   "projects": {
-    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+        "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
         "projectName": "SetsisB2C_Core",
-        "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+        "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
         "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
+        "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj": {
+    "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
+        "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
         "projectName": "SetsisB2C_Entities",
-        "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
+        "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\SetsisB2C_Entities.csproj",
         "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-        "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\",
+        "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CEntities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -102,8 +102,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
-                "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
+              "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj": {
+                "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj"
               }
             }
           }

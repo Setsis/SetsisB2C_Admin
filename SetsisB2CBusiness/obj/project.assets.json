@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+      "projectUniqueName": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
       "projectName": "SetsisB2C_Business",
-      "projectPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
+      "projectPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\SetsisB2C_Business.csproj",
       "packagesPath": "C:\\Users\\emirh\\.nuget\\packages\\",
-      "outputPath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
+      "outputPath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -72,13 +72,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CBusiness\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

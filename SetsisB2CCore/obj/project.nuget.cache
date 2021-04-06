@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8qbuCndM28U7L9sMtPPZtF+Uebn2FeLZkuNuIT+NIi4ASRbGAz4G2p/FOUUGxYux4MyqYMb3G0RvoBZwqAjSZQ==",
+  "dgSpecHash": "aFwprJgQekQRtf5MpPyMMzldKVc0j9DzD/Lh6YJULbcQ9ZnsogGlpVlEdfnrIlb1HOtv1bbUp+k2aIzUArYvWQ==",
   "success": true,
-  "projectFilePath": "E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
+  "projectFilePath": "D:\\Projects\\SetsisB2C_Admin\\SetsisB2CCore\\SetsisB2C_Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.4\\microsoft.entityframeworkcore.5.0.4.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.4\\microsoft.entityframeworkcore.abstractions.5.0.4.nupkg.sha512",
@@ -19,12 +19,5 @@
     "C:\\Users\\emirh\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\emirh\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\Projeler\\Serkan\\SetsisB2C_Admin\\SetsisB2CCore\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
