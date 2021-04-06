@@ -13,8 +13,6 @@ namespace SetsisB2C_UI.Controllers
     {
         public IActionResult GetStock()
         {
-            string a = "sfdfsd";
-            string b = "";
             return View();
         }
         public IActionResult AddStock()
