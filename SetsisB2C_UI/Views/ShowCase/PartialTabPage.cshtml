@@ -4,28 +4,91 @@
 
 
 <div class="input-group-prepend d-flex flex-row-reverse">
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target=".bd-example-modal-lg">
-        Yeni Blok Ekle
-    </button>
+   
     <!-- Modal -->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
+               
+                    <div class="card">
+                        <div class="card-body">
 
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#general" role="tab" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                        <span class="d-none d-sm-block">Genel Ayarlar</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#content" role="tab" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                        <span class="d-none d-sm-block">İçerik Ayarları</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#template" role="tab" aria-selected="false">
+                                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                        <span class="d-none d-sm-block">Şablon</span>
+                                    </a>
+                                </li>
+                                @*<li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#settings" role="tab" aria-selected="true">
+                                        <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                        <span class="d-none d-sm-block">Settings</span>
+                                    </a>
+                                </li>*@
+                            </ul>
 
+                            <!-- Tab panes -->
+                            <div class="tab-content p-3 text-muted">
+                                <div class="tab-pane active" id="general" role="tabpanel">
+                                    <partial name="GeneralSettings" />
+                                </div>
+                                <div class="tab-pane" id="content" role="tabpanel">
+                                    <p class="mb-0">
+                                        Food truck fixie locavore, accusamus mcsweeney's marfa nulla
+                                        single-origin coffee squid. Exercitation +1 labore velit, blog
+                                        sartorial PBR leggings next level wes anderson artisan four loko
+                                        farm-to-table craft beer twee. Qui photo booth letterpress,
+                                        commodo enim craft beer mlkshk aliquip jean shorts ullamco ad
+                                        vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                                        aesthetic magna delectus.
+                                    </p>
+                                </div>
+                                <div class="tab-pane" id="template" role="tabpanel">
+                                    <p class="mb-0">
+                                        Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                        sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                        farm-to-table readymade. Messenger bag gentrify pitchfork
+                                        tattooed craft beer, iphone skateboard locavore carles etsy
+                                        salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                        Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
+                                        mi whatever gluten yr.
+                                    </p>
+                                </div>
+                                @*<div class="tab-pane active" id="settings" role="tabpanel">
+                                    <p class="mb-0">
+                                        Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                        art party before they sold out master cleanse gluten-free squid
+                                        scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                        art party locavore wolf cliche high life echo park Austin. Cred
+                                        vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                        farm-to-table VHS.
+                                    </p>
+                                </div>*@
+                            </div>
 
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Genel</a>
-                        <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">İçerik</a>
-                        <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Hazır Blok Şablonları</a>
+                      
                     </div>
-                </nav>
-                <div class="tab-content mt-3" id="nav-tabContent">
-                  <partial name="GeneralSettings"/>
+                </div>
+                
+                @*<div class="tab-content mt-3" id="nav-tabContent">
+                    <partial name="GeneralSettings" />
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">..sdsdsdsdsdsdsdsds</div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">ss...</div>
-                </div>
+                </div>*@
 
 
             </div>

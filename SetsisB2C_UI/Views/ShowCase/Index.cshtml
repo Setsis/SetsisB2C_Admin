@@ -1,30 +1,33 @@
-﻿
+﻿@{ ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
 
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+@model ShowCaseViewModel
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4">
+                        <form>
+                            <select id="pages">
+                                <option value="0">Sayfa Seç</option>
+                                @foreach (var p in Model.pages)
+                                {
+                    <option value="@p.PageId">@p.PageName</option>
 }
+                            </select>
 
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-3  col-xl-4">
-                        <select class="form-control">
-                            <option>Ana Sayfa</option>
-                            <option>Categoriler</option>
-                            <option>Small select</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-success" type="button" id="inputGroupFileAddon03">Kaydet</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ">
+                            <input id="list" type="button" value="button" name="Listele" />
 
-                    <partial name="../Shared/PartialView/PartialTabPage.cshtml" />
+                        </form>
+
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-4">
+                        <button type="button" class="btn btn-success mt-2 mt-md-0  float-sm-left float-md-left  float-lg-righ float-xl-right" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            Yeni Blok Ekle
+                        </button>
+                        <!-- Modal -->
+                        @await Component.InvokeAsync("ShowCaseModal")
                     </div>
                 </div>
             </div>
@@ -32,98 +35,291 @@
     </div>
 </div>
 
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
+<div id="component"></div>
+
+<!-- Add Product Modal -->
+<div id="addModal" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="myModalLabel">Ürün Ekle</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
                 <div class="row">
-                    <div class="col-sm-6 col-md-8 col-lg-8 col-xl-8"align="center">
-                        <h5>Blok Adı</h5>
+                    <div class="col-md-9">
+                        <label>Barkod</label>
+                        <input type="text" class="form-control" id="productBarcode">
                     </div>
-
-                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 ">
-                        <ul class="list-inline font-size-20 contact-links mb-0 float-sm-left float-md-left float-lg-right float-xl-right" >
-                            <li class="list-inline-item px-2">
-                                <a href="" data-toggle="tooltip" data-placement="top" title="DÜZENLE"><i class="mdi mdi-pencil font-size-16 text-success mr-1" ></i></a>
-                            </li>
-                            <li  class="list-inline-item px-2">
-                                <a  id="delete"   data-toggle="tooltip" data-placement="top" title="Sil"><i  class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
-                            </li>
-                        </ul>
+                    <div class="col-md-3">
+                        <button type="button" id="productAdd" class="btn btn-primary w-md">Ürün Ekle</button>
                     </div>
+                </div>
 
+                <div id="productTable"></div>
+            </div>
+
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Add Product Modal End-->
+<!-- Edit Product Modal-->
+<div id="editModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="myModalLabel">Genel Ayarlar</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <form asp-controller="showcase" asp-action="Create">
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <div class="form-group">
+                                        <label for="DesignName">Dizayn Adı</label>
+                                        <input name="DesignName" type="text" class="form-control" id="editDesignName">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="DesignHeader">Başlık</label>
+                                        <input name="DesignHeader" type="text" class="form-control" id="editDesignHeader">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Description">Açıklama</label>
+                                        <input name="Description" type="text" class="form-control" id="editDescription">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="RowWidth">Genişlik</label>
+                                                <input name="RowWidth" type="number" class="form-control" id="editRowWidth">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="RowHeight">Yükseklik</label>
+                                                <input type="number" class="form-control" id="editRowHeight" name="RowHeight">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary w-md">Kaydet</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
+<!-- Edit Product Modal End-->
+@section Scripts
+{
+    <script>
+        $('#addModal').on('show.bs.modal', function (e) {
+
+
+            //populate the table
+            $("#productTable").empty();
+                var _url = '@Url.Action("TableGet", "Showcase")';
+                $.ajax({
+                    type: "GET",
+                    url: _url,
+                    data: { showCaseId: $(e.relatedTarget).data('sc-id') },
+                    success: function (result) {
+                        $("#productTable").html(result);
+                    },
+                });
+            //add product
+            $('#productAdd').click(function () {
+            {
+               $("#productTable").empty();
+                var _url = '@Url.Action("TablePost", "Showcase")';
+                $.ajax({
+                    type: "POST",
+                    url: _url,
+                    data: {
+                        barcode: $("#productBarcode").val(),
+                        showCaseId: showcaseId
+                    },
+                    success: function (result) {
+                        $("#productTable").html(result);
+                    },
+                });
+            }
+        });
+        });
+    </script>
+    <script>
+        $('#editModal').on('show.bs.modal', function (e) {
+
+            //populate the tablev
+            
+            $('#editDesignName').val($(e.relatedTarget).data('sc').name);
+            $('#editDesignHeader').val($(e.relatedTarget).data('sc').header);
+            $('#editDescription').val($(e.relatedTarget).data('sc').description);
+            $('#editRowWidth').val($(e.relatedTarget).data('sc').width);
+            $('#editRowHeight').val($(e.relatedTarget).data('sc').height);
+        });
+    </script>
+    <script>
+   $(document).ready(function () {
+       $('#productAdd').click(function () {
+            {
+               $("#productTable").empty();
+                var _url = '@Url.Action("Table", "Showcase")';
+                $.ajax({
+                    type: "POST",
+                    url: _url,
+                    data: { barcode: $("#productBarcode").val() },
+                    success: function (result) {
+                        $("#productTable").html(result);
+                    },
+                });
+            }
+        });
+    });
+    </script>
+    <!-- Vİtrinleri listeleme -->
+    <script>
+   $(document).ready(function () {
+        $('#list').click(function () {
+            {
+                $("#component").empty();
+                var _url = '@Url.Action("List", "Showcase")';
+                $.ajax({
+                    type: "GET",
+                    url: _url,
+                    data: { pageId: $("#pages").val() },
+                    success: function (result) {
+                        $("#component").html(result);
+                    },
+                });
+            }
+        });
+    });
+    </script>
+    <!-- Vİtrinleri listeleme son-->
+    <script>
+
+        document.getElementById("kaydet").addEventListener("click", function () {
+
+            Command: toastr["success"]("Kayıt İşlemi Başarıyla Tamamlandı")
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": 300,
+                "hideDuration": 1000,
+                "timeOut": 5000,
+                "extendedTimeOut": 1000,
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+
+        })
+
+        document.getElementById("delete").addEventListener("click", function () {
+
+            Command: toastr["success"]("Silme İşlemi Başarıyla Tamamlandı")
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": 300,
+                "hideDuration": 1000,
+                "timeOut": 5000,
+                "extendedTimeOut": 1000,
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+
+        })
+
+        document.getElementById("product").addEventListener("click", function () {
+
+
+            var search = document.getElementById("crd");
+            if (search.style.display == "none") {
+
+                search.style.display = "block";
+            }
+
+
+        });
 
 
 
-@section Scripts{
-
-<script>
-
-    document.getElementById("kaydet").addEventListener("click", function () {
-
-        Command: toastr["success"]("Kayıt İşlemi Başarıyla Tamamlandı")
-
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": 300,
-            "hideDuration": 1000,
-            "timeOut": 5000,
-            "extendedTimeOut": 1000,
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
-
-
-    })
-
-    document.getElementById("delete").addEventListener("click", function () {
-
-        Command: toastr["success"]("Silme İşlemi Başarıyla Tamamlandı")
-
-        toastr.options = {
-            "closeButton": true,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": 300,
-            "hideDuration": 1000,
-            "timeOut": 5000,
-            "extendedTimeOut": 1000,
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
-
-
-    })
-
-    document.getElementById("product").addEventListener("click", function () {
-
-        var search = document.getElementById("crd");
-        if (search.style.display == "none") {
-
-            search.style.display = "block";
-        }
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 
+                                                                            //$(document).ready(function () {
+                                                                            //    $("#ekle").click(function () {
+                                                                            //        let item = $("#search").val();
+                                                                            //        $.ajax({
+
+                                                                            //            datatype: "json",
+                                                                            //            type: "Get",
+                                                                            //            contenttype: "application/jsom;charset=utf-8",
+                                                                            //            url: "ShowCase/PostItemCode",
+                                                                            //            data: { ıtemcode: item },
+
+                                                                            //            success: function (data) {
+
+                                                                            //                let product = JSON.parse(data);
+                                                                            //                console.log(product);
+                                                                            //                /*        let htmltag = "<table class='table'><thead> <tr><th>barcode</th><th>ürün adı</th><th>açıklama</th><th>renk</th></tr></thead>"*/
+
+
+                                                                            //                //$.each(data, (i, value) => {
+                                                                            //                //    console.log(value);
+                                                                            //                //})
+
+
+                                                                            //                // $("#tblproduct").append(`<td>${data.barcode}</td><td>${data.itemcode}</td><td>${data.itemdescription}</td><td>${data.colordescription}</td>`)
+                                                                            //                ////htmltag += `<tr><td>${value.barcode}</td><td>${value.itemcode}</td><td>${value.itemdescription}</td><td>${value.colordescription}</td></tr>`
+
+
+
+                                                                            //                //htmltag += "</table>";
+                                                                            //                //$("#show").html(htmltag);
+                                                                            //            }
+                                                                            //        });
+                                                                            //    });
+                                                                            //});
+
+
+
+
+
+    </script>
+
+
+}
