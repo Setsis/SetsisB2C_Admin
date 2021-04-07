@@ -1,0 +1,144 @@
+﻿
+@{
+  
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<partial name="Report"/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js"></script>
+
+<script>
+
+
+
+
+  
+
+      
+
+
+        var chart = document.getElementById("daySales").getContext('2d');
+        var dayChart=new Chart(chart, {
+
+            type: 'bar',
+            data: {
+
+                labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
+                datasets: [{
+
+                    barThickness: 18,
+
+                    label: "Günlük Satış",
+                    data: [100, 200, 300],
+                    backgroundColor: 'rgba(6,128,250)',
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+
+        })
+
+   
+
+        var chart = document.getElementById("mounthSales").getContext('2d');
+        var monthChart= new Chart(chart, {
+
+            type: 'bar',
+            data: {
+
+                labels: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"],
+                datasets: [{
+
+                    barThickness: 18,
+
+                    label: "Aylık Satış",
+                    data: [13, 27, 34],
+                    backgroundColor: 'rgba(6,128,250)',
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+
+        })
+
+
+        var chart = document.getElementById("yearSales").getContext('2d');
+        var yearChart=new Chart(chart, {
+
+            type: 'bar',
+            data: {
+
+                labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"],
+                datasets: [{
+
+                    barThickness: 18,
+
+                    label: "Yıllık Satış",
+                    data: [10, 20, 30],
+                    backgroundColor: 'rgba(6,128,250)',
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+
+        })
+
+    var pie = document.getElementById("pie").getContext('2d');
+    var pieChart = new Chart(pie, {
+
+        type: 'pie',
+        data: {
+
+            labels:["A","B","C"],
+            datasets: [{
+
+                barThickness:10,
+               
+
+                label: "Temperature",
+                data: [10, 20, 30],
+                backgroundColor: ["red", "orange", "blue"],
+                borderColor: ["orange", "yellow", "white"],
+                borderWith:1
+            }]
+        },
+        options: {
+            responsive:false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: false
+                    }
+                }]
+            }
+        }
+
+    })
+
+   
+
+</script>

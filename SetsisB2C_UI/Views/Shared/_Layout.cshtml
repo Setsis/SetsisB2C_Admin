@@ -19,6 +19,10 @@
     <link href="~/HTML/Admin/dist/assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="~/HTML/Admin/dist/assets/libs/toastr/build/toastr.min.css">
     <link href="~/HTML/Admin/dist/assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+   
+
+    
+
 
 </head>
 
@@ -433,7 +437,7 @@
                         <ul class="navbar-nav">
 
                             <li class="nav-item dropdown">
-                                <a asp-controller="Home" asp-action="Index" class="nav-link dropdown-toggle arrow-none" id="topnav-dashboard">
+                                <a asp-controller="Dashboard" asp-action="Index" class="nav-link dropdown-toggle arrow-none" id="topnav-dashboard">
                                     <i class="bx bx-home-circle mr-2"></i><span key="t-dashboards">Ana Sayfa</span>
                                 </a>
                             </li>
@@ -734,6 +738,15 @@
     <!-- toastr init -->
     <script src="~/HTML/Admin/dist/assets/js/pages/toastr.init.js"></script>
     <script src="~/HTML/Admin/dist/assets/libs/dropzone/min/dropzone.min.js"></script>
+
+    <script src="~/HTML/Admin/dist/assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="~/HTML/Admin/dist/assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="~/HTML/Admin/dist/assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- apexcharts -->
+    <script src="~/HTML/Admin/dist/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+
 
     @RenderSection("Scripts", required: false)
     @RenderSection("Order", required: false)
