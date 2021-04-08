@@ -90,8 +90,13 @@ namespace SetsisB2C_UI.Controllers
             caseProducts = apiConnect.StrResponse;
             apiConnect = new ApiConnect("https://localhost:44356/Design/AddCaseProducts?PageDesignID=" + showCaseId + "&Barcode=" + barcode + "&ProductSortNumber=" + caseProducts.Count()+1);
             
-
             return ViewComponent("BarcodeTable", showCaseId);
+        }
+        [HttpDelete]
+        public IActionResult DeleteShowcase(Guid showCaseId)
+        {
+            ApiConnect apiConnect = new ApiConnect("http://10.20.8.6:2071/Design/DeleteShowCase?PageDesignID=" + showCaseId);
+            return RedirectToAction("Index", "Showcase");
         }
     }
 }

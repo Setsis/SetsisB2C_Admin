@@ -35,10 +35,11 @@
     </div>
 </div>
 
+<!-- ShowCase List Component-->
 <div id="component"></div>
-
+<!-- ShowCase List Component End-->
 <!-- Add Product Modal -->
-<div id="addModal" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" >
+<div id="addModal" class="modal fade " tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -64,7 +65,6 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
 <!-- Add Product Modal End-->
 <!-- Edit Product Modal-->
 <div id="editModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -79,7 +79,7 @@
             <div>
                 <div class="card">
                     <div class="card-body">
-                        
+
                         <form asp-controller="showcase" asp-action="Create">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -124,11 +124,36 @@
     </div>
 </div>
 <!-- Edit Product Modal End-->
+<!-- Delete Modal-->
+
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" aria-labelledby="mySmallModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title mt-0" id="mySmallModalLabel">Vitrin Sil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" id="showCaseDelete" class="btn btn-primary w-md">Sil</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" id="cancel" class="btn btn-primary w-md" data-dismiss="modal">Vazgeç</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--Delete Modal End-->
 @section Scripts
 {
     <script>
         $('#addModal').on('show.bs.modal', function (e) {
-
 
             //populate the table
             $("#productTable").empty();
@@ -164,8 +189,6 @@
     <script>
         $('#editModal').on('show.bs.modal', function (e) {
 
-            //populate the tablev
-            
             $('#editDesignName').val($(e.relatedTarget).data('sc').name);
             $('#editDesignHeader').val($(e.relatedTarget).data('sc').header);
             $('#editDescription').val($(e.relatedTarget).data('sc').description);
@@ -173,6 +196,26 @@
             $('#editRowHeight').val($(e.relatedTarget).data('sc').height);
         });
     </script>
+<!--Delete ShowCase-->
+    <script>
+   $(document).ready(function () {
+       $('#showCaseDelete').click(function () {
+            {
+              
+                var _url = '@Url.Action("DeleteShowcase", "Showcase")';
+                $.ajax({
+                    type: "DELETE",
+                    url: _url,
+                    data: { showCaseId: $(e.relatedTarget).data('sc-id') },
+                    success: function (result) {
+                        $("#productTable").html(result);
+                    },
+                });
+            }
+        });
+    });
+    </script>
+<!--Delete Showcase End-->
     <script>
    $(document).ready(function () {
        $('#productAdd').click(function () {
@@ -191,7 +234,7 @@
         });
     });
     </script>
-    <!-- Vİtrinleri listeleme -->
+    <!-- Vitrinleri listeleme -->
     <script>
    $(document).ready(function () {
         $('#list').click(function () {
@@ -280,40 +323,40 @@
 
 
 
-                                                                            //$(document).ready(function () {
-                                                                            //    $("#ekle").click(function () {
-                                                                            //        let item = $("#search").val();
-                                                                            //        $.ajax({
+                                                                                    //$(document).ready(function () {
+                                                                                    //    $("#ekle").click(function () {
+                                                                                    //        let item = $("#search").val();
+                                                                                    //        $.ajax({
 
-                                                                            //            datatype: "json",
-                                                                            //            type: "Get",
-                                                                            //            contenttype: "application/jsom;charset=utf-8",
-                                                                            //            url: "ShowCase/PostItemCode",
-                                                                            //            data: { ıtemcode: item },
+                                                                                    //            datatype: "json",
+                                                                                    //            type: "Get",
+                                                                                    //            contenttype: "application/jsom;charset=utf-8",
+                                                                                    //            url: "ShowCase/PostItemCode",
+                                                                                    //            data: { ıtemcode: item },
 
-                                                                            //            success: function (data) {
+                                                                                    //            success: function (data) {
 
-                                                                            //                let product = JSON.parse(data);
-                                                                            //                console.log(product);
-                                                                            //                /*        let htmltag = "<table class='table'><thead> <tr><th>barcode</th><th>ürün adı</th><th>açıklama</th><th>renk</th></tr></thead>"*/
-
-
-                                                                            //                //$.each(data, (i, value) => {
-                                                                            //                //    console.log(value);
-                                                                            //                //})
+                                                                                    //                let product = JSON.parse(data);
+                                                                                    //                console.log(product);
+                                                                                    //                /*        let htmltag = "<table class='table'><thead> <tr><th>barcode</th><th>ürün adı</th><th>açıklama</th><th>renk</th></tr></thead>"*/
 
 
-                                                                            //                // $("#tblproduct").append(`<td>${data.barcode}</td><td>${data.itemcode}</td><td>${data.itemdescription}</td><td>${data.colordescription}</td>`)
-                                                                            //                ////htmltag += `<tr><td>${value.barcode}</td><td>${value.itemcode}</td><td>${value.itemdescription}</td><td>${value.colordescription}</td></tr>`
+                                                                                    //                //$.each(data, (i, value) => {
+                                                                                    //                //    console.log(value);
+                                                                                    //                //})
+
+
+                                                                                    //                // $("#tblproduct").append(`<td>${data.barcode}</td><td>${data.itemcode}</td><td>${data.itemdescription}</td><td>${data.colordescription}</td>`)
+                                                                                    //                ////htmltag += `<tr><td>${value.barcode}</td><td>${value.itemcode}</td><td>${value.itemdescription}</td><td>${value.colordescription}</td></tr>`
 
 
 
-                                                                            //                //htmltag += "</table>";
-                                                                            //                //$("#show").html(htmltag);
-                                                                            //            }
-                                                                            //        });
-                                                                            //    });
-                                                                            //});
+                                                                                    //                //htmltag += "</table>";
+                                                                                    //                //$("#show").html(htmltag);
+                                                                                    //            }
+                                                                                    //        });
+                                                                                    //    });
+                                                                                    //});
 
 
 
