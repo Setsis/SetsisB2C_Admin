@@ -36,7 +36,6 @@ namespace SetsisB2C_UI.Controllers
         [HttpPost]
         public IActionResult Slider (SliderFile sliderFile,string name,string description, string imageLink,int orders,string imageName)
         {
-            string value = "";
             //value = apiConnect.StrResponse;
             //var userControl = JsonConvert.DeserializeObject<SliderSettings>(value);
 

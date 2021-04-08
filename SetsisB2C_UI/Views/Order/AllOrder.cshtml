@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<SetsisB2C_UI.Models.Orders.Orders>
 @{
     ViewData["Title"] = "AllOrder";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -24,19 +24,41 @@
         <div class="card">
             <div class="card-body">
                 <div class="row mb-2">
-                    <div class="col-sm-4">
+                    <div class="col-sm-pull-2 col-md-offset-1">Filtreleme:</div>
+                   
+                    <div class="col-sm-pull-2">
                         <div class="search-box mr-2 mb-2 d-inline-block">
                             <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Search...">
+                                <input type="text" class="form-control" placeholder="Müşteri Adı">
                                 <i class="bx bx-search-alt search-icon"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-8">
-                        <div class="text-sm-right">
-                            <button type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 mr-2"><i class="mdi mdi-plus mr-1"></i> Yeni Siparişler</button>
+                    <div class="col-sm-pull-2">
+                        <div class="search-box mr-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Sipariş No.">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
                         </div>
-                    </div><!-- end col-->
+                    </div>
+                    <div class="col-sm-pull-2">
+                        <div class="search-box mr-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Barkod">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-push-2">
+                        <div class="search-box mr-2 mb-2 d-inline-block">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" placeholder="Ürün Kodu">
+                                <i class="bx bx-search-alt search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+             
                 </div>
 
                 <div class="table-responsive">
@@ -44,165 +66,55 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Sipariş ID</th>
-                                <th>Firma Adı</th>
+                                <th>Fotoğraf</th>
+                                <th>Sipariş Bilgileri</th>
+                                <th>Alıcı Adı</th>
                                 <th>Ürün Adı</th>
-                                <th>Tarih</th>
-                                <th>Toplam</th>
-                                <th>Ödeme Durumu</th>
-                                <th>Platform</th>
+                                <th>Adet</th>
+                                <th>Fiyat</th>
+                                <th>Kargo</th>
                                 <th>Aksiyon</th>
-
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="@item.OrderNumber">&nbsp;</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="~/HTML/Admin/src/assets/images/product/img-1.png" alt="@item.OrderNumber" height="35" width="35">
+                                    </td>
+                                    <td>
+                                        <span style="white-space: pre-line">Sipariş No: #@item.OrderNumber </span>
+                                        Sipariş Tarihi: @item.CreatedDate
+                                    </td>
+                                    <td>
+                                        @item.FullName
+                                    </td>
+                                    <td>@item.ItemDescription</td>
 
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>Juan Mays</td>
-                                <td>
-                                    <p class="mb-1">443-523-4726</p>
-                                    <p class="mb-0">JuanMays@armyspy.com</p>
-                                </td>
-
-                                <td>
-                                    3755 Harron Drive
-                                    Salisbury, MD 21875
-                                <td>06 Oct, 2019</td>
-
-                                <td>$5,632</td>
-                                <td><span class="badge badge-success font-size-12"><i class="mdi mdi-star mr-1"></i> 4.0</span></td>
-                                <td>zühre.com</td>
-                                <td>
-
-                                    <ul class="list-inline font-size-20 contact-links mb-0 ">
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="DÜZENLE"><i class="mdi mdi-pencil font-size-16 text-success mr-1"></i></a>
-                                        </li>
-                                        <li class="list-inline-item px-2">
-                                            <a id="orderDelete" data-toggle="tooltip" data-placement="top" title="Sil"><i class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
-                                        </li>
-                                    </ul>
-
-
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>Juan Mays</td>
-                                <td>
-                                    <p class="mb-1">443-523-4726</p>
-                                    <p class="mb-0">JuanMays@armyspy.com</p>
-                                </td>
-
-                                <td>
-                                    3755 Harron Drive
-                                    Salisbury, MD 21875
-                                <td>06 Oct, 2019</td>
-
-                                <td>$5,632</td>
-                                <td><span class="badge badge-success font-size-12"><i class="mdi mdi-star mr-1"></i> 4.0</span></td>
-                                <td>zühre.com</td>
-                                <td>
-
-                                    <ul class="list-inline font-size-20 contact-links mb-0 ">
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="DÜZENLE"><i class="mdi mdi-pencil font-size-16 text-success mr-1"></i></a>
-                                        </li>
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="Sil"><i class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
-                                        </li>
-                                    </ul>
+                                    <td>@item.Qty1</td>
+                                    <td>@item.Price</td>
+                                    <td>X KARGO</td>
+                                    <td>
+                                        <ul class="list-inline font-size-20 contact-links mb-0 ">
+                                            <li class="list-inline-item px-2">
+                                                <a href="" data-toggle="tooltip" data-placement="top" title="işlem Yap"><i class="mdi mdi-pencil font-size-16 text-success mr-1"></i></a>
+                                            </li>
+                                            <li class="list-inline-item px-2">
+                                                <a id="orderDelete" data-toggle="tooltip" data-placement="top" title="Sil"><i class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
+                                            </li>
+                                        </ul>
 
 
-                                </td>
-                            </tr>
-
-
-
-
-
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>Juan Mays</td>
-                                <td>
-                                    <p class="mb-1">443-523-4726</p>
-                                    <p class="mb-0">JuanMays@armyspy.com</p>
-                                </td>
-
-                                <td>
-                                    3755 Harron Drive
-                                    Salisbury, MD 21875
-                                <td>06 Oct, 2019</td>
-
-                                <td>$5,632</td>
-                                <td><span class="badge badge-success font-size-12"><i class="mdi mdi-star mr-1"></i> 4.0</span></td>
-                                <td>zühre.com</td>
-                                <td>
-
-                                    <ul class="list-inline font-size-20 contact-links mb-0 ">
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="DÜZENLE"><i class="mdi mdi-pencil font-size-16 text-success mr-1"></i></a>
-                                        </li>
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="Sil"><i class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
-                                        </li>
-                                    </ul>
-
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">&nbsp;</label>
-                                    </div>
-                                </td>
-                                <td>Juan Mays</td>
-                                <td>
-                                    <p class="mb-1">443-523-4726</p>
-                                    <p class="mb-0">JuanMays@armyspy.com</p>
-                                </td>
-
-                                <td>
-                                    3755 Harron Drive
-                                    Salisbury, MD 21875
-                                <td>06 Oct, 2019</td>
-
-                                <td>$5,632</td>
-                                <td><span class="badge badge-success font-size-12"><i class="mdi mdi-star mr-1"></i> 4.0</span></td>
-                                <td>zühre.com</td>
-                                <td>
-
-                                    <ul class="list-inline font-size-20 contact-links mb-0 ">
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="DÜZENLE"><i class="mdi mdi-pencil font-size-16 text-success mr-1"></i></a>
-                                        </li>
-                                        <li class="list-inline-item px-2">
-                                            <a href="" data-toggle="tooltip" data-placement="top" title="Sil"><i class="mdi mdi-trash-can font-size-16 text-danger mr-1"></i></a>
-                                        </li>
-                                    </ul>
-
-
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
+                            }
 
                         </tbody>
                     </table>
@@ -230,37 +142,37 @@
 </div>
 
 
-@section Order { 
+@section Order {
 
-<script>
-
-
-    document.getElementById("orderDelete").addEventListener("click", function(){
-
-        Command: toastr["success"]("Sipariş Silme İşlemi Başarıyla Tamamlandı")
-
-        toastr.options = {
-            "closeButton": false,
-            "debug": false,
-            "newestOnTop": false,
-            "progressBar": false,
-            "positionClass": "toast-top-right",
-            "preventDuplicates": false,
-            "onclick": null,
-            "showDuration": 300,
-            "hideDuration": 1000,
-            "timeOut": 5000,
-            "extendedTimeOut": 1000,
-            "showEasing": "swing",
-            "hideEasing": "linear",
-            "showMethod": "fadeIn",
-            "hideMethod": "fadeOut"
-        }
-
-    })
+    <script>
 
 
-</script>
+        document.getElementById("orderDelete").addEventListener("click", function () {
+
+            Command: toastr["success"]("Sipariş Silme İşlemi Başarıyla Tamamlandı")
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": 300,
+                "hideDuration": 1000,
+                "timeOut": 5000,
+                "extendedTimeOut": 1000,
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+        })
+
+
+    </script>
 
 
 
