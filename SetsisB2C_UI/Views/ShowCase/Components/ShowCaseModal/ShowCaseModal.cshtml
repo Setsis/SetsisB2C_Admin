@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model ShowCaseModalModel
+<div class="input-group-prepend d-flex flex-row-reverse">
+
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mt-0" id="myModalLabel">Genel Ayarlar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <form asp-controller="showcase" asp-action="Create">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="pageId">Sayfa</label>
+                                                    <select asp-for="PageId"
+                                                            asp-items="@(new SelectList(Model.pages,"PageId","PageName"))" class="form-control">
+                                                        <option>Sayfa Seçin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="ShowCaseTypeId">Vitrin Türü</label>
+                                                    <select asp-for="ShowCaseTypeId" asp-items="@(new SelectList(Model.Types,"ShowCaseDesignId","TypeName"))" class="form-control">
+                                                        <option>Tür Seçin</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="DesignName">Dizayn Adı</label>
+                                            <input name="DesignName" type="text" class="form-control" id="DesignName">
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="DesignHeader">Başlık</label>
+                                            <input name="DesignHeader" type="text" class="form-control" id="DesignHeader">
+                                        </div>
+                                        <div class="form-group">
+                                            <label asp-for="Description">Açıklama</label>
+                                            <input name="Description" type="text" class="form-control" id="Description">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label asp-for="RowWidth">Genişlik</label>
+                                                    <input name="RowWidth" type="number" class="form-control" id="RowWidth">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label asp-for="RowHeight">Yükseklik</label>
+                                                    <input type="number" class="form-control" id="RowHeight" name="RowHeight">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="btn btn-primary w-md">Vitrin Ekle</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
