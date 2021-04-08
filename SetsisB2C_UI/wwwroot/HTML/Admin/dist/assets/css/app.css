@@ -39,7 +39,6 @@ File: Main Css File
   width: 250px; }
 
 .logo {
-  line-height: 70px;
 margin-top: 15px;
 }
   .logo .logo-sm {
@@ -690,7 +689,7 @@ body[data-sidebar="colored"].vertical-collpsed .vertical-menu #sidebar-menu ul l
 @media (min-width: 1200px) {
   body[data-layout="horizontal"] .container-fluid,
   body[data-layout="horizontal"] .navbar-header {
-    max-width: 85%; } }
+    max-width: 100%; } }
 
 @media (min-width: 992px) {
   .topnav .navbar-nav .nav-item:first-of-type .nav-link {

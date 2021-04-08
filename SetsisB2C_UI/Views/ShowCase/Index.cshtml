@@ -29,6 +29,10 @@
                         <partial name="PartialTabPage">
 
                     </div>
+                    <div class="col-md-4 ">
+
+                        <partial name="../Shared/PartialView/PartialTabPage.cshtml" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -61,6 +65,66 @@
     </div>
 </div>
 
+
+
+@section Scripts{
+
+    <script>
+
+        document.getElementById("kaydet").addEventListener("click", function () {
+
+            Command: toastr["success"]("Kayıt İşlemi Başarıyla Tamamlandı")
+
+            toastr.options = {
+                "closeButton": false,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": 300,
+                "hideDuration": 1000,
+                "timeOut": 5000,
+                "extendedTimeOut": 1000,
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+
+        })
+
+        document.getElementById("delete").addEventListener("click", function () {
+
+            Command: toastr["success"]("Silme İşlemi Başarıyla Tamamlandı")
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": false,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": 300,
+                "hideDuration": 1000,
+                "timeOut": 5000,
+                "extendedTimeOut": 1000,
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+
+
+        })
+
+        document.getElementById("product").addEventListener("click", function () {
+
+            var search = document.getElementById("crd");
+            if (search.style.display == "none") {
 
 
 
